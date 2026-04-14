@@ -613,30 +613,8 @@ const App: React.FC = () => {
         </Page>
 
         
-        {/* REFERENCES */}
+        {/* PAGE 39+: APPENDICES */}
         <Page pageNumber={39}>
-          <ChapterTitle title="12. REFERENCES" />
-          <div className="mt-10 space-y-6 font-serif text-[12pt] leading-[2.0]">
-            <p className="pl-8 -indent-8">
-              Balapriya, F., et al. (2022). "Enhanced Smart Waste Segregation and Management Using Arduino." <em>International Journal of Engineering Research & Technology (IJERT)</em>, 11(4), 112-118.
-            </p>
-            <p className="pl-8 -indent-8">
-              Elakkia Elumalai, et al. (2021). "Smart waste detection and segregation." <em>Journal of Physics: Conference Series</em>, 1916(1), 012056.
-            </p>
-            <p className="pl-8 -indent-8">
-              Muhammad Amirul Farhan, & Amira Saryati. (2024). "Smart Waste Bin with Automated Segregation System." <em>IEEE Access</em>, 12, 4567-4575.
-            </p>
-            <p className="pl-8 -indent-8">
-              Shwetashree Vijay, et al. (2019). "Smart Waste Management System Using Arduino." <em>International Journal of Innovative Technology and Exploring Engineering (IJITEE)</em>, 8(9S), 345-350.
-            </p>
-            <p className="pl-8 -indent-8">
-              World Bank Group. (2023). <em>What a Waste 2.0: A Global Snapshot of Solid Waste Management to 2050</em>. Urban Development Series. Washington, DC: World Bank.
-            </p>
-          </div>
-        </Page>
-
-        {/* PAGE 41+: APPENDICES */}
-        <Page pageNumber={40}>
           <ChapterTitle title="APPENDICES" />
           <MainHeading number="A.1" title="Technical Specifications Table" />
           <div className="my-8">
@@ -661,7 +639,7 @@ const App: React.FC = () => {
           </div>
         </Page>
 
-        <Page pageNumber={41}>
+        <Page pageNumber={40}>
           <MainHeading number="A.2" title="System Diagrams" />
           <div className="mt-8">
             <BlockDiagram />
@@ -673,8 +651,26 @@ const App: React.FC = () => {
           </div>
         </Page>
 
-        <Page pageNumber={42}>
-          
+        {/* REFERENCES */}
+        <Page pageNumber={41}>
+          <ChapterTitle title="12. REFERENCES" />
+          <div className="mt-10 space-y-6 font-serif text-[12pt] leading-[2.0]">
+            <p className="pl-8 -indent-8">
+              Balapriya, F., et al. (2022). "Enhanced Smart Waste Segregation and Management Using Arduino." <em>International Journal of Engineering Research & Technology (IJERT)</em>, 11(4), 112-118.
+            </p>
+            <p className="pl-8 -indent-8">
+              Elakkia Elumalai, et al. (2021). "Smart waste detection and segregation." <em>Journal of Physics: Conference Series</em>, 1916(1), 012056.
+            </p>
+            <p className="pl-8 -indent-8">
+              Muhammad Amirul Farhan, & Amira Saryati. (2024). "Smart Waste Bin with Automated Segregation System." <em>IEEE Access</em>, 12, 4567-4575.
+            </p>
+            <p className="pl-8 -indent-8">
+              Shwetashree Vijay, et al. (2019). "Smart Waste Management System Using Arduino." <em>International Journal of Innovative Technology and Exploring Engineering (IJITEE)</em>, 8(9S), 345-350.
+            </p>
+            <p className="pl-8 -indent-8">
+              World Bank Group. (2023). <em>What a Waste 2.0: A Global Snapshot of Solid Waste Management to 2050</em>. Urban Development Series. Washington, DC: World Bank.
+            </p>
+          </div>
           
           <div className="mt-20 flex flex-col items-center">
             <div className="w-48 h-px bg-slate-300 mb-6" />
