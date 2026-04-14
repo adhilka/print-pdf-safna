@@ -26,7 +26,7 @@ const Page: React.FC<{ pageNumber: number; children: React.ReactNode }> = ({ pag
     <div className="flex-grow">
       {children}
     </div>
-    <div className="absolute bottom-8 left-0 right-0 text-center text-sm font-serif no-print">
+    <div className="absolute bottom-8 left-0 right-0 text-center text-sm font-serif">
       Page {pageNumber}
     </div>
     {/* Blue header line as per template */}
