@@ -6,9 +6,9 @@ export const WorkflowDiagram: React.FC = () => {
       <div className="flex flex-col items-center space-y-6">
         <h3 className="text-lg font-bold text-slate-800 uppercase">System Operational Workflow</h3>
         
-        <div className="grid grid-cols-1 md:grid-cols-5 gap-4 w-full items-center">
+        <div className="flex flex-col md:flex-row w-full items-center justify-between gap-4">
           {/* Step 1 */}
-          <div className="flex flex-col items-center text-center">
+          <div className="flex flex-col items-center text-center w-full md:w-1/4">
             <div className="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 font-bold mb-2 border-2 border-blue-200">1</div>
             <div className="bg-blue-50 p-3 rounded-lg border border-blue-100 w-full">
               <p className="font-bold text-xs">WASTE INPUT</p>
@@ -16,10 +16,10 @@ export const WorkflowDiagram: React.FC = () => {
             </div>
           </div>
           
-          <div className="hidden md:block text-slate-300 text-2xl">→</div>
+          <div className="hidden md:block text-slate-300 text-2xl flex-shrink-0">→</div>
           
           {/* Step 2 */}
-          <div className="flex flex-col items-center text-center">
+          <div className="flex flex-col items-center text-center w-full md:w-1/4">
             <div className="w-12 h-12 rounded-full bg-emerald-100 flex items-center justify-center text-emerald-600 font-bold mb-2 border-2 border-emerald-200">2</div>
             <div className="bg-emerald-50 p-3 rounded-lg border border-emerald-100 w-full">
               <p className="font-bold text-xs">DETECTION</p>
@@ -27,10 +27,10 @@ export const WorkflowDiagram: React.FC = () => {
             </div>
           </div>
 
-          <div className="hidden md:block text-slate-300 text-2xl">→</div>
+          <div className="hidden md:block text-slate-300 text-2xl flex-shrink-0">→</div>
 
           {/* Step 3 */}
-          <div className="flex flex-col items-center text-center">
+          <div className="flex flex-col items-center text-center w-full md:w-1/4">
             <div className="w-12 h-12 rounded-full bg-indigo-100 flex items-center justify-center text-indigo-600 font-bold mb-2 border-2 border-indigo-200">3</div>
             <div className="bg-indigo-50 p-3 rounded-lg border border-indigo-100 w-full">
               <p className="font-bold text-xs">PROCESSING</p>
@@ -38,10 +38,10 @@ export const WorkflowDiagram: React.FC = () => {
             </div>
           </div>
 
-          <div className="hidden md:block text-slate-300 text-2xl">→</div>
+          <div className="hidden md:block text-slate-300 text-2xl flex-shrink-0">→</div>
 
           {/* Step 4 */}
-          <div className="flex flex-col items-center text-center">
+          <div className="flex flex-col items-center text-center w-full md:w-1/4">
             <div className="w-12 h-12 rounded-full bg-amber-100 flex items-center justify-center text-amber-600 font-bold mb-2 border-2 border-amber-200">4</div>
             <div className="bg-amber-50 p-3 rounded-lg border border-amber-100 w-full">
               <p className="font-bold text-xs">ACTUATION</p>
