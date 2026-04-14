@@ -158,7 +158,7 @@ const App: React.FC = () => {
             <div className="flex justify-between border-b border-dotted border-gray-400"><span>9. PROTOTYPE DEVELOPMENT PLAN</span><span>32</span></div>
             <div className="flex justify-between border-b border-dotted border-gray-400"><span>10. STAKEHOLDER ENGAGEMENT</span><span>35</span></div>
             <div className="flex justify-between border-b border-dotted border-gray-400"><span>11. RISK MANAGEMENT & CONCLUSION</span><span>38</span></div>
-            <div className="flex justify-between border-b border-dotted border-gray-400"><span>12. APPENDICES</span><span>41</span></div>
+            <div className="flex justify-between border-b border-dotted border-gray-400"><span>APPENDICES</span><span>41</span></div>
           </div>
         </Page>
 
@@ -653,17 +653,12 @@ const App: React.FC = () => {
           <Paragraph>
             The journey towards a circular economy is long, but with innovative technology and community engagement, we can take significant steps towards achieving it. We invite all stakeholders to join us in this journey, as we transform waste management through intelligent automation.
           </Paragraph>
-          <div className="mt-20 flex flex-col items-center">
-            <div className="w-48 h-px bg-slate-300 mb-6" />
-            <h2 className="text-2xl font-bold text-slate-900 uppercase tracking-[0.5em]">Thank You</h2>
-            <p className="text-xs text-slate-400 mt-4 uppercase tracking-widest">End of Report</p>
-          </div>
         </Page>
 
         {/* PAGE 41+: APPENDICES */}
         <Page pageNumber={41}>
-          <ChapterTitle title="12. APPENDICES" />
-          <MainHeading number="12.1" title="Technical Specifications Table" />
+          <ChapterTitle title="APPENDICES" />
+          <MainHeading number="A.1" title="Technical Specifications Table" />
           <div className="my-8">
             <table className="w-full border-collapse border border-gray-300 text-sm font-serif">
               <thead>
@@ -687,22 +682,28 @@ const App: React.FC = () => {
         </Page>
 
         <Page pageNumber={42}>
-          <MainHeading number="12.2" title="System Diagrams" />
+          <MainHeading number="A.2" title="System Diagrams" />
           <div className="mt-8">
             <BlockDiagram />
-            <p className="figure-caption">Figure 12.1: High-Level System Block Diagram</p>
+            <p className="figure-caption">Figure A.1: High-Level System Block Diagram</p>
           </div>
           <div className="mt-12">
             <WorkflowDiagram />
-            <p className="figure-caption">Figure 12.2: Operational Workflow Logic</p>
+            <p className="figure-caption">Figure A.2: Operational Workflow Logic</p>
           </div>
         </Page>
 
         <Page pageNumber={43}>
-          <MainHeading number="12.3" title="Detailed Circuit Wiring" />
+          <MainHeading number="A.3" title="Detailed Circuit Wiring" />
           <div className="mt-8">
             <CircuitDiagram />
-            <p className="figure-caption">Figure 12.3: Comprehensive Circuit Schematic</p>
+            <p className="figure-caption">Figure A.3: Comprehensive Circuit Schematic</p>
+          </div>
+          
+          <div className="mt-20 flex flex-col items-center">
+            <div className="w-48 h-px bg-slate-300 mb-6" />
+            <h2 className="text-2xl font-bold text-slate-900 uppercase tracking-[0.5em]">Thank You</h2>
+            <p className="text-xs text-slate-400 mt-4 uppercase tracking-widest">End of Report</p>
           </div>
         </Page>
 
