@@ -645,14 +645,17 @@ const App: React.FC = () => {
             <BlockDiagram />
             <p className="figure-caption">Figure A.1: High-Level System Block Diagram</p>
           </div>
-          <div className="mt-12">
+        </Page>
+
+        <Page pageNumber={41}>
+          <div className="mt-8">
             <WorkflowDiagram />
             <p className="figure-caption">Figure A.2: Operational Workflow Logic</p>
           </div>
         </Page>
 
         {/* REFERENCES */}
-        <Page pageNumber={41}>
+        <Page pageNumber={42}>
           <ChapterTitle title="12. REFERENCES" />
           <div className="mt-10 space-y-6 font-serif text-[12pt] leading-[2.0]">
             <p className="pl-8 -indent-8">
