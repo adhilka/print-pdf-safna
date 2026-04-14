@@ -136,7 +136,7 @@ export const CircuitDiagram: React.FC = () => {
           <circle cx="80" cy="55" r="10" fill="#ef4444" stroke="#991b1b" strokeWidth="2" />
           <g transform="translate(0, 30)">
             <text x="15" y="5" textAnchor="start" className="text-[10px] fill-slate-600">D8</text>
-            <text x="15" y="25" textAnchor="start" className="text-[10px] fill-slate-600">D9</text>
+            <text x="15" y="25" textAnchor="start" className="text-[10px] fill-slate-600">D7</text>
             <text x="15" y="45" textAnchor="start" className="text-[10px] fill-slate-600">GND</text>
             <circle cx="0" cy="2" r="3" fill="#64748b" />
             <circle cx="0" cy="22" r="3" fill="#64748b" />
@@ -147,53 +147,74 @@ export const CircuitDiagram: React.FC = () => {
         {/* WIRING (Manhattan Routing) */}
         <g fill="none" strokeWidth="2" strokeLinejoin="round" strokeLinecap="round">
           {/* VCC Lines (Red) */}
-          <path d="M220 122 H 280 V 632 H 220" stroke="#ef4444" /> {/* IR & Power */}
-          <path d="M220 272 H 280" stroke="#ef4444" /> {/* Moisture */}
-          <path d="M220 422 H 280" stroke="#ef4444" /> {/* Cap */}
-          <path d="M280 305 H 450" stroke="#ef4444" /> {/* To Arduino 5V */}
+          <path d="M220 122 H 240 V 632 H 220" stroke="#ef4444" /> {/* IR & Power */}
+          <path d="M220 272 H 240" stroke="#ef4444" /> {/* Moisture */}
+          <path d="M220 422 H 240" stroke="#ef4444" /> {/* Cap */}
+          <path d="M240 315 H 460" stroke="#ef4444" /> {/* To Arduino 5V */}
           
-          <path d="M730 305 H 780 V 132 H 820" stroke="#ef4444" /> {/* Arduino 5V to Servos */}
+          <path d="M240 80 H 780 V 492" stroke="#ef4444" /> {/* Top bridge to right bus */}
+          <path d="M780 132 H 820" stroke="#ef4444" />
           <path d="M780 252 H 820" stroke="#ef4444" />
           <path d="M780 372 H 820" stroke="#ef4444" />
           <path d="M780 492 H 820" stroke="#ef4444" />
 
           {/* GND Lines (Black) */}
-          <path d="M220 142 H 260 V 662 H 220" stroke="#000000" /> {/* IR & Power */}
-          <path d="M220 292 H 260" stroke="#000000" /> {/* Moisture */}
-          <path d="M220 442 H 260" stroke="#000000" /> {/* Cap */}
-          <path d="M260 285 H 450" stroke="#000000" /> {/* To Arduino GND */}
+          <path d="M220 142 H 250 V 662 H 220" stroke="#000000" /> {/* IR & Power */}
+          <path d="M220 292 H 250" stroke="#000000" /> {/* Moisture */}
+          <path d="M220 442 H 250" stroke="#000000" /> {/* Cap */}
+          <path d="M250 275 H 460" stroke="#000000" /> {/* To Arduino GND */}
           
-          <path d="M730 285 H 760 V 147 H 820" stroke="#000000" /> {/* Arduino GND to Servos */}
-          <path d="M760 267 H 820" stroke="#000000" />
-          <path d="M760 387 H 820" stroke="#000000" />
-          <path d="M760 507 H 820" stroke="#000000" />
-          <path d="M760 672 H 820" stroke="#000000" /> {/* To LED GND */}
+          <path d="M250 60 H 790 V 672 H 820" stroke="#000000" /> {/* Top bridge to right bus & LED GND */}
+          <path d="M790 147 H 820" stroke="#000000" />
+          <path d="M790 267 H 820" stroke="#000000" />
+          <path d="M790 387 H 820" stroke="#000000" />
+          <path d="M790 507 H 820" stroke="#000000" />
 
           {/* Signal Lines (Various Colors) */}
           {/* IR OUT to D2 */}
-          <path d="M220 162 H 320 V 235 H 730" stroke="#3b82f6" /> 
+          <path d="M220 162 H 300 V 710 H 750 V 475 H 720" stroke="#3b82f6" /> 
           {/* Moisture SIG to A0 */}
-          <path d="M220 312 H 340 V 455 H 450" stroke="#10b981" />
+          <path d="M220 312 H 320 V 455 H 460" stroke="#10b981" />
           {/* Cap SIG to A1 */}
-          <path d="M220 462 H 360 V 475 H 450" stroke="#8b5cf6" />
+          <path d="M220 462 H 340 V 475 H 460" stroke="#8b5cf6" />
           
-          {/* Servo PWMs (D3, D4, D5, D6) */}
-          <path d="M730 215 H 820" stroke="#f59e0b" /> {/* Servo 1 */}
-          <path d="M730 195 H 740 V 237 H 820" stroke="#f59e0b" /> {/* Servo 2 */}
-          <path d="M730 175 H 750 V 357 H 820" stroke="#f59e0b" /> {/* Servo 3 */}
-          <path d="M730 155 H 760 V 477 H 820" stroke="#f59e0b" /> {/* Servo 4 */}
+          {/* Servo PWMs (D11, D10, D9, D6) */}
+          <path d="M720 295 H 740 V 117 H 820" stroke="#f59e0b" /> {/* Servo 1 to D11 */}
+          <path d="M720 315 H 750 V 237 H 820" stroke="#f59e0b" /> {/* Servo 2 to D10 */}
+          <path d="M720 335 H 760 V 357 H 820" stroke="#f59e0b" /> {/* Servo 3 to D9 */}
+          <path d="M720 395 H 770 V 477 H 820" stroke="#f59e0b" /> {/* Servo 4 to D6 */}
 
-          {/* LED Signals (D8, D9) */}
-          <path d="M730 115 H 750 V 632 H 820" stroke="#ec4899" /> {/* LED 1 */}
-          <path d="M730 95 H 740 V 652 H 820" stroke="#ec4899" /> {/* LED 2 */}
+          {/* LED Signals (D8, D7) */}
+          <path d="M720 355 H 740 V 632 H 820" stroke="#ec4899" /> {/* LED 1 to D8 */}
+          <path d="M720 375 H 730 V 652 H 820" stroke="#ec4899" /> {/* LED 2 to D7 */}
         </g>
         
         {/* Connection Dots */}
         <g fill="#000000">
-          <circle cx="280" cy="305" r="4" fill="#ef4444" />
-          <circle cx="260" cy="285" r="4" />
-          <circle cx="780" cy="305" r="4" fill="#ef4444" />
-          <circle cx="760" cy="285" r="4" />
+          {/* VCC Dots */}
+          <circle cx="240" cy="122" r="4" fill="#ef4444" />
+          <circle cx="240" cy="272" r="4" fill="#ef4444" />
+          <circle cx="240" cy="422" r="4" fill="#ef4444" />
+          <circle cx="240" cy="315" r="4" fill="#ef4444" />
+          <circle cx="240" cy="80" r="4" fill="#ef4444" />
+          <circle cx="780" cy="80" r="4" fill="#ef4444" />
+          <circle cx="780" cy="132" r="4" fill="#ef4444" />
+          <circle cx="780" cy="252" r="4" fill="#ef4444" />
+          <circle cx="780" cy="372" r="4" fill="#ef4444" />
+          <circle cx="780" cy="492" r="4" fill="#ef4444" />
+
+          {/* GND Dots */}
+          <circle cx="250" cy="142" r="4" />
+          <circle cx="250" cy="292" r="4" />
+          <circle cx="250" cy="442" r="4" />
+          <circle cx="250" cy="275" r="4" />
+          <circle cx="250" cy="60" r="4" />
+          <circle cx="790" cy="60" r="4" />
+          <circle cx="790" cy="147" r="4" />
+          <circle cx="790" cy="267" r="4" />
+          <circle cx="790" cy="387" r="4" />
+          <circle cx="790" cy="507" r="4" />
+          <circle cx="790" cy="672" r="4" />
         </g>
 
         {/* Header Label */}
