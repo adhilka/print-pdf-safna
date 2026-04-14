@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Times New Roman", Times, serif;
+}
+
+@layer base {
+  body {
+    @apply bg-gray-100 print:bg-white;
+  }
+}
+
+@layer utilities {
+  .page-break {
+    break-after: page;
+  }
+  
+  .justified-text {
+    text-align: justify;
+    text-justify: inter-word;
+  }
+}
+
+@media print {
+  @page {
+    size: A4;
+    margin: 2cm;
+  }
+  
+  body {
+    background: none;
+  }
+  
+  .no-print {
+    display: none;
+  }
+  
+  .print-shadow-none {
+    box-shadow: none !important;
+  }
+}
+
+/* A4 Page Container */
+.a4-page {
+  width: 210mm;
+  min-height: 297mm;
+  padding: 20mm;
+  margin: 10mm auto;
+  background: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+@media print {
+  .a4-page {
+    margin: 0;
+    box-shadow: none;
+    width: 100%;
+    min-height: initial;
+  }
+}
