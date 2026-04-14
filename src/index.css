@@ -6,7 +6,8 @@
 
 @layer base {
   body {
-    @apply bg-gray-100 print:bg-white;
+    @apply bg-slate-200 print:bg-white;
+    font-family: var(--font-serif);
   }
 }
 
@@ -19,44 +20,81 @@
     text-align: justify;
     text-justify: inter-word;
   }
-}
-
-@media print {
-  @page {
-    size: A4;
-    margin: 2cm;
-  }
   
-  body {
-    background: none;
-  }
-  
-  .no-print {
-    display: none;
-  }
-  
-  .print-shadow-none {
-    box-shadow: none !important;
+  .double-spaced {
+    line-height: 2.0;
   }
 }
 
 /* A4 Page Container */
 .a4-page {
   width: 210mm;
-  min-height: 297mm;
-  padding: 20mm;
+  height: 297mm;
+  padding: 25mm 20mm;
   margin: 10mm auto;
   background: white;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
   position: relative;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
 @media print {
+  body {
+    background: none;
+  }
   .a4-page {
     margin: 0;
     box-shadow: none;
     width: 100%;
-    min-height: initial;
+    height: 100vh;
+    page-break-after: always;
+  }
+  .no-print {
+    display: none;
   }
 }
+
+/* Typography Rules */
+.chapter-title {
+  font-size: 16pt;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.main-heading {
+  font-size: 14pt;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.sub-heading {
+  font-size: 12pt;
+  font-weight: bold;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.body-text {
+  font-size: 12pt;
+  line-height: 2.0;
+  text-align: justify;
+}
+
+.figure-caption {
+  font-size: 12pt;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+.table-caption {
+  font-size: 12pt;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
