@@ -41,18 +41,31 @@
 }
 
 @media print {
+  @page {
+    margin: 0;
+    size: A4;
+  }
   body {
-    background: none;
+    background: white !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .report-container {
+    padding: 0 !important;
+    margin: 0 !important;
+    display: block !important;
   }
   .a4-page {
-    margin: 0;
-    box-shadow: none;
-    width: 100%;
-    height: 100vh;
-    page-break-after: always;
+    margin: 0 !important;
+    box-shadow: none !important;
+    width: 210mm !important;
+    height: 297mm !important;
+    page-break-after: always !important;
+    break-after: page !important;
+    border: none !important;
   }
   .no-print {
-    display: none;
+    display: none !important;
   }
 }
 

@@ -53,7 +53,7 @@ const App: React.FC = () => {
       </div>
 
       {/* Report Container */}
-      <div className="flex flex-col items-center py-8">
+      <div className="report-container flex flex-col items-center py-8">
         
         {/* PAGE 1: COVER PAGE */}
         <Page pageNumber={1}>
