@@ -23,7 +23,7 @@ const Paragraph: React.FC<{ children: React.ReactNode }> = ({ children }) => (
 
 const Page: React.FC<{ pageNumber: number; children: React.ReactNode }> = ({ pageNumber, children }) => (
   <div className="a4-page relative">
-    <div className="flex-grow">
+    <div className="flex-grow pb-12">
       {children}
     </div>
     <div className="absolute bottom-8 left-0 right-0 text-center text-sm font-serif">
@@ -58,35 +58,35 @@ const App: React.FC = () => {
         
         {/* PAGE 1: TITLE PAGE */}
         <Page pageNumber={1}>
-          <div className="h-full flex flex-col items-center justify-center py-10">
-            <h2 className="text-lg font-serif mb-8">PROJECT REPORT ON</h2>
-            <h1 className="text-3xl font-bold font-serif mb-12 uppercase tracking-widest text-center">
+          <div className="h-full flex flex-col items-center justify-center py-6">
+            <h2 className="text-lg font-serif mb-4">PROJECT REPORT ON</h2>
+            <h1 className="text-3xl font-bold font-serif mb-6 uppercase tracking-widest text-center">
               Smart Waste Segregation Using Sensors
             </h1>
             
-            <p className="text-md font-serif italic mb-8 text-center max-w-2xl">
+            <p className="text-md font-serif italic mb-4 text-center max-w-2xl">
               Submitted in partial fulfillment of the requirements for the award of the degree of
             </p>
             
-            <h2 className="text-xl font-bold font-serif mb-8 text-center">
+            <h2 className="text-xl font-bold font-serif mb-4 text-center">
               BACHELOR OF TECHNOLOGY
             </h2>
-            <p className="text-md font-serif italic mb-8">in</p>
-            <h2 className="text-xl font-bold font-serif mb-12 text-center">
+            <p className="text-md font-serif italic mb-4">in</p>
+            <h2 className="text-xl font-bold font-serif mb-6 text-center">
               ELECTRONICS AND COMMUNICATION ENGINEERING
             </h2>
 
             <img 
               src="https://i.ibb.co/FL4T3YZR/Screenshot-2026-04-15-15-31-31-859-com-google-android-apps-docs-edit.jpg" 
               alt="College Logo" 
-              className="w-48 h-48 object-contain mb-12"
+              className="w-32 h-32 object-contain mb-6"
             />
 
-            <div className="text-center mb-12">
-              <p className="text-lg font-serif italic mb-4">Submitted By</p>
-              <div className="space-y-2 text-md font-serif font-bold uppercase">
-                <p>NOOR FATHIMA A</p>
+            <div className="text-center mb-6">
+              <p className="text-lg font-serif italic mb-2">Submitted By</p>
+              <div className="space-y-1 text-md font-serif font-bold uppercase">
                 <p>SAFNA FATHIMA S S</p>
+                <p>NOOR FATHIMA A</p>
                 <p>NOORUL SURUMI NF</p>
                 <p>AMINA S</p>
                 <p>MUHAMMED RAMEES N</p>
@@ -96,47 +96,47 @@ const App: React.FC = () => {
             <div className="text-center font-serif font-bold text-lg mt-auto">
               <p>MUSLIM ASSOCIATION COLLEGE OF ENGINEERING</p>
               <p>VENJARAMOODU 695607</p>
-              <p className="mt-8">MAY 2026</p>
+              <p className="mt-4">MARCH 30, 2026</p>
             </div>
           </div>
         </Page>
 
         {/* PAGE 2: CERTIFICATE */}
         <Page pageNumber={2}>
-          <div className="h-full flex flex-col items-center py-10">
-            <h2 className="text-xl font-bold font-serif text-center mb-4">
+          <div className="h-full flex flex-col items-center py-6">
+            <h2 className="text-xl font-bold font-serif text-center mb-2">
               MUSLIM ASSOCIATION COLLEGE OF ENGINEERING
             </h2>
-            <h3 className="text-lg font-bold font-serif text-center mb-8">
+            <h3 className="text-lg font-bold font-serif text-center mb-4">
               VENJARAMOODU 695607
             </h3>
-            <h3 className="text-lg font-serif text-center mb-8 uppercase">
+            <h3 className="text-lg font-serif text-center mb-4 uppercase">
               DEPARTMENT OF ELECTRONICS AND COMMUNICATION ENGINEERING
             </h3>
 
             <img 
               src="https://i.ibb.co/FL4T3YZR/Screenshot-2026-04-15-15-31-31-859-com-google-android-apps-docs-edit.jpg" 
               alt="College Logo" 
-              className="w-40 h-40 object-contain mb-8"
+              className="w-32 h-32 object-contain mb-4"
             />
 
-            <h1 className="text-2xl font-bold font-serif mb-8 tracking-widest">
+            <h1 className="text-2xl font-bold font-serif mb-6 tracking-widest">
               CERTIFICATE
             </h1>
 
-            <div className="text-justify font-serif text-[12pt] leading-[2.0] mb-16">
-              Certified that project entitled <strong>“SMART WASTE SEGREGATION USING SENSORS”</strong> is bonafide work carried out in the eighth semester by <strong>“NOOR FATHIMA A, SAFNA FATHIMA S S, NOORUL SURUMI NF, AMINA S, MUHAMMED RAMEES N”</strong> in partial fulfillment for the award of Bachelor of Technology in Electronics and Communication Engineering from APJ Abdul Kalam Technological University during the academic year 2025-2026 who carried out the project work under the guidance and no part of this work has been submitted earlier for the award of B. Tech degree.
+            <div className="text-justify font-serif text-[12pt] leading-[2.0] mb-8">
+              Certified that project entitled <strong>“SMART WASTE SEGREGATION USING SENSORS”</strong> is bonafide work carried out in the eighth semester by <strong>“SAFNA FATHIMA S S, NOOR FATHIMA A, NOORUL SURUMI NF, AMINA S, MUHAMMED RAMEES N”</strong> in partial fulfillment for the award of Bachelor of Technology in Electronics and Communication Engineering from APJ Abdul Kalam Technological University during the academic year 2025-2026 who carried out the project work under the guidance and no part of this work has been submitted earlier for the award of B. Tech degree.
             </div>
 
-            <div className="w-full flex justify-between px-8 mt-12 font-serif">
+            <div className="w-full flex justify-between px-8 mt-6 font-serif">
               <div className="text-center">
-                <p className="font-bold mb-16">PROJECT COORDINATOR</p>
+                <p className="font-bold mb-8">PROJECT COORDINATOR</p>
                 <p className="font-bold">Mrs. SAJITHA P</p>
                 <p>VP & Associate Professor</p>
                 <p>Department of ECE</p>
               </div>
               <div className="text-center">
-                <p className="font-bold mb-16">PROJECT GUIDE</p>
+                <p className="font-bold mb-8">PROJECT GUIDE</p>
                 <p className="font-bold">Mrs. RASUL MUTHU A</p>
                 <p>Assistant Professor</p>
                 <p>Department of ECE</p>
@@ -144,7 +144,7 @@ const App: React.FC = () => {
             </div>
 
             <div className="text-center mt-auto font-serif">
-              <p className="font-bold mb-16">HEAD OF THE DEPARTMENT</p>
+              <p className="font-bold mb-8">HEAD OF THE DEPARTMENT</p>
               <p className="font-bold">Dr. SHEFIN SHOUKATH</p>
               <p>Department of ECE</p>
             </div>
@@ -153,11 +153,11 @@ const App: React.FC = () => {
 
         {/* PAGE 3: ACKNOWLEDGEMENT */}
         <Page pageNumber={3}>
-          <div className="py-10">
-            <h1 className="text-2xl font-bold font-serif text-center mb-12 tracking-widest">
+          <div className="py-6">
+            <h1 className="text-2xl font-bold font-serif text-center mb-8 tracking-widest">
               ACKNOWLEDGEMENT
             </h1>
-            <div className="space-y-6 font-serif text-[12pt] leading-[2.0] text-justify">
+            <div className="space-y-4 font-serif text-[12pt] leading-[2.0] text-justify">
               <p>
                 First and foremost, we wish to place record our ardent and earnest gratitude to <strong>Dr. SHEFIN SHOUKATH</strong>, Head of the Department of Electronics and Communication Engineering for providing us with all facilities for the completion of this project.
               </p>
@@ -175,12 +175,12 @@ const App: React.FC = () => {
               </p>
             </div>
 
-            <div className="mt-16 flex justify-end font-serif">
+            <div className="mt-10 flex justify-end font-serif">
               <div className="text-left">
-                <p className="mb-4">SUBMITTED BY,</p>
-                <div className="space-y-2 uppercase">
-                  <p>NOOR FATHIMA A</p>
+                <p className="mb-2">SUBMITTED BY,</p>
+                <div className="space-y-1 uppercase">
                   <p>SAFNA FATHIMA S S</p>
+                  <p>NOOR FATHIMA A</p>
                   <p>NOORUL SURUMI NF</p>
                   <p>AMINA S</p>
                   <p>MUHAMMED RAMEES N</p>
@@ -192,11 +192,11 @@ const App: React.FC = () => {
 
         {/* PAGE 4: ABSTRACT */}
         <Page pageNumber={4}>
-          <div className="py-10">
-            <h1 className="text-2xl font-bold font-serif text-center mb-12 tracking-widest">
+          <div className="py-6">
+            <h1 className="text-2xl font-bold font-serif text-center mb-8 tracking-widest">
               ABSTRACT
             </h1>
-            <div className="space-y-6 font-serif text-[12pt] leading-[2.0] text-justify">
+            <div className="space-y-4 font-serif text-[12pt] leading-[2.0] text-justify">
               <p>
                 The global waste crisis necessitates innovative solutions for efficient segregation and recycling. This project presents an automated "Smart Waste Segregation System" designed to classify waste at the point of disposal. Utilizing an Arduino Uno microcontroller integrated with IR, moisture, and capacitive sensors, the system identifies waste as organic (wet), plastic, or other materials in real-time.
               </p>
@@ -212,78 +212,78 @@ const App: React.FC = () => {
 
         {/* PAGE 5: INDEX */}
         <Page pageNumber={5}>
-          <div className="py-10">
-            <h1 className="text-2xl font-bold font-serif text-center mb-12 tracking-widest">
+          <div className="py-6">
+            <h1 className="text-2xl font-bold font-serif text-center mb-10 tracking-widest">
               INDEX
             </h1>
             
-            <div className="font-serif text-[12pt] leading-[2.0] w-full max-w-3xl mx-auto">
-              <div className="flex justify-between font-bold border-b-2 border-black pb-2 mb-4">
-                <span className="w-24">Chapter No.</span>
-                <span className="flex-grow text-center">Title</span>
-                <span className="w-24 text-right">Page No.</span>
+            <div className="font-serif text-[12pt] leading-[2.0] w-full max-w-4xl mx-auto px-8">
+              <div className="grid grid-cols-[120px_1fr_120px] gap-4 font-bold mb-6">
+                <span className="text-center">Chapter No.</span>
+                <span className="text-center">Title</span>
+                <span className="text-center">Page No.</span>
               </div>
               
               <div className="space-y-2">
-                <div className="flex justify-between">
-                  <span className="w-24 text-center">1</span>
-                  <span className="flex-grow">Executive Summary</span>
-                  <span className="w-24 text-right">06</span>
+                <div className="grid grid-cols-[120px_1fr_120px] gap-4">
+                  <span className="text-center">1</span>
+                  <span className="pl-8">Executive Summary</span>
+                  <span className="text-center">06</span>
                 </div>
-                <div className="flex justify-between">
-                  <span className="w-24 text-center">2</span>
-                  <span className="flex-grow">Introduction & Venture Overview</span>
-                  <span className="w-24 text-right">08</span>
+                <div className="grid grid-cols-[120px_1fr_120px] gap-4">
+                  <span className="text-center">2</span>
+                  <span className="pl-8">Introduction & Venture Overview</span>
+                  <span className="text-center">08</span>
                 </div>
-                <div className="flex justify-between">
-                  <span className="w-24 text-center">3</span>
-                  <span className="flex-grow">Literature Review</span>
-                  <span className="w-24 text-right">11</span>
+                <div className="grid grid-cols-[120px_1fr_120px] gap-4">
+                  <span className="text-center">3</span>
+                  <span className="pl-8">Literature Review</span>
+                  <span className="text-center">11</span>
                 </div>
-                <div className="flex justify-between">
-                  <span className="w-24 text-center">4</span>
-                  <span className="flex-grow">Technology Overview</span>
-                  <span className="w-24 text-right">15</span>
+                <div className="grid grid-cols-[120px_1fr_120px] gap-4">
+                  <span className="text-center">4</span>
+                  <span className="pl-8">Technology Overview</span>
+                  <span className="text-center">15</span>
                 </div>
-                <div className="flex justify-between">
-                  <span className="w-24 text-center">5</span>
-                  <span className="flex-grow">System Design & Architecture</span>
-                  <span className="w-24 text-right">20</span>
+                <div className="grid grid-cols-[120px_1fr_120px] gap-4">
+                  <span className="text-center">5</span>
+                  <span className="pl-8">System Design & Architecture</span>
+                  <span className="text-center">20</span>
                 </div>
-                <div className="flex justify-between">
-                  <span className="w-24 text-center">6</span>
-                  <span className="flex-grow">Methodology</span>
-                  <span className="w-24 text-right">23</span>
+                <div className="grid grid-cols-[120px_1fr_120px] gap-4">
+                  <span className="text-center">6</span>
+                  <span className="pl-8">Methodology</span>
+                  <span className="text-center">23</span>
                 </div>
-                <div className="flex justify-between">
-                  <span className="w-24 text-center">7</span>
-                  <span className="flex-grow">Market Analysis</span>
-                  <span className="w-24 text-right">25</span>
+                <div className="grid grid-cols-[120px_1fr_120px] gap-4">
+                  <span className="text-center">7</span>
+                  <span className="pl-8">Market Analysis</span>
+                  <span className="text-center">25</span>
                 </div>
-                <div className="flex justify-between">
-                  <span className="w-24 text-center">8</span>
-                  <span className="flex-grow">Business Model & Financials</span>
-                  <span className="w-24 text-right">29</span>
+                <div className="grid grid-cols-[120px_1fr_120px] gap-4">
+                  <span className="text-center">8</span>
+                  <span className="pl-8">Business Model & Financials</span>
+                  <span className="text-center">29</span>
                 </div>
-                <div className="flex justify-between">
-                  <span className="w-24 text-center">9</span>
-                  <span className="flex-grow">Prototype Development Plan</span>
-                  <span className="w-24 text-right">32</span>
+                <div className="grid grid-cols-[120px_1fr_120px] gap-4">
+                  <span className="text-center">9</span>
+                  <span className="pl-8">Prototype Development Plan</span>
+                  <span className="text-center">32</span>
                 </div>
-                <div className="flex justify-between">
-                  <span className="w-24 text-center">10</span>
-                  <span className="flex-grow">Stakeholder Engagement</span>
-                  <span className="w-24 text-right">35</span>
+                <div className="grid grid-cols-[120px_1fr_120px] gap-4">
+                  <span className="text-center">10</span>
+                  <span className="pl-8">Stakeholder Engagement</span>
+                  <span className="text-center">35</span>
                 </div>
-                <div className="flex justify-between">
-                  <span className="w-24 text-center">11</span>
-                  <span className="flex-grow">Risk Management & Conclusion</span>
-                  <span className="w-24 text-right">38</span>
+                <div className="grid grid-cols-[120px_1fr_120px] gap-4">
+                  <span className="text-center">11</span>
+                  <span className="pl-8">Risk Management & Conclusion</span>
+                  <span className="text-center">38</span>
                 </div>
-                <div className="flex justify-between">
-                  <span className="w-24 text-center">12</span>
-                  <span className="flex-grow">References</span>
-                  <span className="w-24 text-right">44</span>
+                <div className="grid grid-cols-[120px_1fr_120px] gap-4">
+                  <span className="text-center">12</span>
+                  <span className="pl-8">References</span>
+                  <span className="text-center">44</span>
                 </div>
               </div>
             </div>
