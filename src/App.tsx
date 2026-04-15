@@ -18,7 +18,7 @@ const SubHeading: React.FC<{ number: string; title: string }> = ({ number, title
 );
 
 const Paragraph: React.FC<{ children: React.ReactNode }> = ({ children }) => (
-  <p className="body-text mb-4">{children}</p>
+  <p className="text-justify mb-4">{children}</p>
 );
 
 const Page: React.FC<{ pageNumber: number; children: React.ReactNode }> = ({ pageNumber, children }) => (
@@ -125,7 +125,7 @@ const App: React.FC = () => {
             </h1>
 
             <div className="text-justify font-serif text-[12pt] leading-[2.0] mb-8">
-              Certified that project entitled <strong>“SMART WASTE SEGREGATION USING SENSORS”</strong> is bonafide work carried out in the eighth semester by <strong>“NOOR FATHIMA A, SAFNA FATHIMA S.S, NOORUL SURUMI N.F, AMINA S, MUHAMMED RAMEES N”</strong> in partial fulfillment for the award of Bachelor of Technology in Electronics and Communication Engineering from APJ Abdul Kalam Technological University during the academic year 2025-2026 who carried out the project work under the guidance and no part of this work has been submitted earlier for the award of B. Tech degree.
+              Certified that project entitled <strong>“SMART WASTE SEGREGATION USING SENSORS”</strong> is bonafide work carried out in the Second Semester by <strong>“NOOR FATHIMA A, SAFNA FATHIMA S.S, NOORUL SURUMI N.F, AMINA S, MUHAMMED RAMEES N”</strong> in partial fulfillment for the award of Bachelor of Technology in Electronics and Communication Engineering from APJ Abdul Kalam Technological University during the academic year 2025-2026 who carried out the project work under the guidance and no part of this work has been submitted earlier for the award of B. Tech degree.
             </div>
 
             <div className="w-full flex justify-between px-8 mt-6 font-serif">
@@ -348,7 +348,7 @@ const App: React.FC = () => {
           <Paragraph>
             Our venture is built on a foundation of core values that guide our decision-making and operational strategies. These values ensure that we remain focused on our mission while maintaining the highest standards of ethics and professionalism in all our interactions.
           </Paragraph>
-          <div className="space-y-6 font-serif text-[12pt] leading-[2.0]">
+          <div className="space-y-6 font-serif text-[12pt] leading-[2.0] text-justify">
             <p><strong>Sustainability:</strong> We prioritize solutions that have a long-term positive impact on the environment. Every component of our system is chosen with its lifecycle and environmental footprint in mind, ensuring that our product is as green as the problem it solves.</p>
             <p><strong>Innovation:</strong> We continuously seek new ways to apply technology to solve complex environmental problems. We foster a culture of creativity and experimentation within our team, encouraging the exploration of new sensors and algorithms.</p>
             <p><strong>Integrity:</strong> We are committed to transparency in our operations and the accuracy of our data. We believe in building trust with our customers and partners through honest communication and reliable product performance.</p>
@@ -609,7 +609,7 @@ const App: React.FC = () => {
           <Paragraph>
             Our business model is designed to ensure long-term financial sustainability while maximizing environmental impact. We have identified several key revenue streams that will allow us to scale our operations and continue our R&D efforts.
           </Paragraph>
-          <div className="space-y-6 font-serif text-[12pt] leading-[2.0]">
+          <div className="space-y-6 font-serif text-[12pt] leading-[2.0] text-justify">
             <p><strong>Direct Product Sales:</strong> Selling smart bins to municipalities, institutions, and commercial customers. We offer different models based on capacity and sensor configuration, with prices ranging from ₹8,000 to ₹15,000 per unit.</p>
             <p><strong>Maintenance Contracts:</strong> Annual agreements for sensor calibration, software updates, and mechanical servicing. This provides a steady stream of recurring revenue and ensures that our bins continue to operate at peak efficiency.</p>
             <p><strong>Data Services:</strong> Providing anonymized waste generation data to municipal authorities for better resource planning and compliance monitoring.</p>
@@ -706,7 +706,7 @@ const App: React.FC = () => {
           <Paragraph>
             We have identified several key stakeholder groups who are critical to the success of our project. Engaging with these groups ensures that our solution meets the needs of all parties involved and gains the necessary support for widespread adoption.
           </Paragraph>
-          <div className="space-y-6 font-serif text-[12pt] leading-[2.0]">
+          <div className="space-y-6 font-serif text-[12pt] leading-[2.0] text-justify">
             <p><strong>End Users:</strong> The general public who will use the bins. Their adoption is critical for the system's success. We focus on making the disposal process as intuitive and rewarding as possible.</p>
             <p><strong>Municipal Authorities:</strong> Our primary customers and policy-makers. They provide the regulatory framework and funding. We engage them through technical demonstrations and cost-benefit analyses.</p>
             <p><strong>Environmental Organizations:</strong> Potential partners who can provide endorsements and access to networks. They help us validate our environmental impact claims.</p>
@@ -828,7 +828,7 @@ const App: React.FC = () => {
         {/* REFERENCES */}
         <Page pageNumber={44}>
           <ChapterTitle title="12. REFERENCES" />
-          <div className="mt-10 space-y-6 font-serif text-[12pt] leading-[2.0]">
+          <div className="mt-10 space-y-6 font-serif text-[12pt] leading-[2.0] text-justify">
             <p className="pl-8 -indent-8">
               Balapriya, F., et al. (2022). "Enhanced Smart Waste Segregation and Management Using Arduino." <em>International Journal of Engineering Research & Technology (IJERT)</em>, 11(4), 112-118.
             </p>
