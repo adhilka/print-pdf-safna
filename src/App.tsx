@@ -55,72 +55,243 @@ const App: React.FC = () => {
       {/* Report Container */}
       <div className="report-container flex flex-col items-center">
         
-        {/* PAGE 1: COVER PAGE */}
+        
+        {/* PAGE 1: TITLE PAGE */}
         <Page pageNumber={1}>
-          <div className="h-full flex flex-col items-center justify-around py-20 border-4 border-blue-900 p-8">
-            <div className="text-center">
-              <h1 className="text-4xl font-bold text-blue-900 mb-4 uppercase tracking-tighter">
-                Smart Waste Segregation Using Sensors
-              </h1>
-              <div className="w-32 h-1 bg-blue-900 mx-auto mb-8"></div>
-              <h2 className="text-2xl font-serif italic text-gray-700">Business Plan & Technical Report</h2>
-            </div>
+          <div className="h-full flex flex-col items-center justify-center py-10">
+            <h2 className="text-lg font-serif mb-8">PROJECT REPORT ON</h2>
+            <h1 className="text-3xl font-bold font-serif mb-12 uppercase tracking-widest text-center">
+              Smart Waste Segregation Using Sensors
+            </h1>
+            
+            <p className="text-md font-serif italic mb-8 text-center max-w-2xl">
+              Submitted in partial fulfillment of the requirements for the award of the degree of
+            </p>
+            
+            <h2 className="text-xl font-bold font-serif mb-8 text-center">
+              BACHELOR OF TECHNOLOGY
+            </h2>
+            <p className="text-md font-serif italic mb-8">in</p>
+            <h2 className="text-xl font-bold font-serif mb-12 text-center">
+              ELECTRONICS AND COMMUNICATION ENGINEERING
+            </h2>
 
-            <div className="text-center space-y-4">
-              <p className="text-xl font-bold uppercase tracking-widest text-gray-800">Presented By:</p>
-              <div className="space-y-2 text-lg font-serif">
-                <p>NOOR FATHIMA.A</p>
-                <p>SAFNA FATHIMA.S.S</p>
-                <p>NOORUL SURUMI.F</p>
-                <p>AMINA.S</p>
-                <p>MUHAMMED RAMEES.N</p>
+            <img 
+              src="https://i.ibb.co/FL4T3YZR/Screenshot-2026-04-15-15-31-31-859-com-google-android-apps-docs-edit.jpg" 
+              alt="College Logo" 
+              className="w-48 h-48 object-contain mb-12"
+            />
+
+            <div className="text-center mb-12">
+              <p className="text-lg font-serif italic mb-4">Submitted By</p>
+              <div className="space-y-2 text-md font-serif font-bold uppercase">
+                <p>NOOR FATHIMA A</p>
+                <p>SAFNA FATHIMA S S</p>
+                <p>NOORUL SURUMI NF</p>
+                <p>AMINA S</p>
+                <p>MUHAMMED RAMEES N</p>
               </div>
             </div>
 
-            <div className="text-center">
-              <p className="text-lg font-serif text-gray-600">Date of Submission: March 30, 2026</p>
-              <p className="text-sm font-serif text-gray-500 mt-2 uppercase tracking-widest">Innovation in Sustainable Technology</p>
+            <div className="text-center font-serif font-bold text-lg mt-auto">
+              <p>MUSLIM ASSOCIATION COLLEGE OF ENGINEERING</p>
+              <p>VENJARAMOODU 695607</p>
+              <p className="mt-8">MAY 2026</p>
+            </div>
+          </div>
+        </Page>
+
+        {/* PAGE 2: CERTIFICATE */}
+        <Page pageNumber={2}>
+          <div className="h-full flex flex-col items-center py-10">
+            <h2 className="text-xl font-bold font-serif text-center mb-4">
+              MUSLIM ASSOCIATION COLLEGE OF ENGINEERING
+            </h2>
+            <h3 className="text-lg font-bold font-serif text-center mb-8">
+              VENJARAMOODU 695607
+            </h3>
+            <h3 className="text-lg font-serif text-center mb-8 uppercase">
+              DEPARTMENT OF ELECTRONICS AND COMMUNICATION ENGINEERING
+            </h3>
+
+            <img 
+              src="https://i.ibb.co/FL4T3YZR/Screenshot-2026-04-15-15-31-31-859-com-google-android-apps-docs-edit.jpg" 
+              alt="College Logo" 
+              className="w-40 h-40 object-contain mb-8"
+            />
+
+            <h1 className="text-2xl font-bold font-serif mb-8 tracking-widest">
+              CERTIFICATE
+            </h1>
+
+            <div className="text-justify font-serif text-[12pt] leading-[2.0] mb-16">
+              Certified that project entitled <strong>“SMART WASTE SEGREGATION USING SENSORS”</strong> is bonafide work carried out in the eighth semester by <strong>“NOOR FATHIMA A, SAFNA FATHIMA S S, NOORUL SURUMI NF, AMINA S, MUHAMMED RAMEES N”</strong> in partial fulfillment for the award of Bachelor of Technology in Electronics and Communication Engineering from APJ Abdul Kalam Technological University during the academic year 2025-2026 who carried out the project work under the guidance and no part of this work has been submitted earlier for the award of B. Tech degree.
+            </div>
+
+            <div className="w-full flex justify-between px-8 mt-12 font-serif">
+              <div className="text-center">
+                <p className="font-bold mb-16">PROJECT COORDINATOR</p>
+                <p className="font-bold">Mrs. SAJITHA P</p>
+                <p>VP & Associate Professor</p>
+                <p>Department of ECE</p>
+              </div>
+              <div className="text-center">
+                <p className="font-bold mb-16">PROJECT GUIDE</p>
+                <p className="font-bold">Mrs. RASUL MUTHU A</p>
+                <p>Assistant Professor</p>
+                <p>Department of ECE</p>
+              </div>
+            </div>
+
+            <div className="text-center mt-auto font-serif">
+              <p className="font-bold mb-16">HEAD OF THE DEPARTMENT</p>
+              <p className="font-bold">Dr. SHEFIN SHOUKATH</p>
+              <p>Department of ECE</p>
             </div>
           </div>
         </Page>
 
         {/* PAGE 3: ACKNOWLEDGEMENT */}
-        <Page pageNumber={2}>
-          <ChapterTitle title="Acknowledgement" />
-          <div className="mt-10 space-y-6">
-            <Paragraph>
-              We would like to express our deepest gratitude to our mentors and faculty members for their constant support and guidance throughout the development of this project. Their technical expertise and encouragement were instrumental in overcoming the challenges we faced during the prototyping and testing phases.
-            </Paragraph>
-            <Paragraph>
-              Special thanks to the Department of Electronics and Communication for providing the necessary laboratory facilities and resources. The access to advanced testing equipment allowed us to calibrate our sensors with high precision.
-            </Paragraph>
-            <Paragraph>
-              We also acknowledge the contributions of our peers who provided valuable feedback during the initial demonstrations. Their insights helped us refine the user interface and mechanical design of the smart bin.
-            </Paragraph>
-            <Paragraph>
-              Finally, we thank our families for their patience and support during the long hours spent on research and prototype construction. This project would not have been possible without their unwavering belief in our vision.
-            </Paragraph>
+        <Page pageNumber={3}>
+          <div className="py-10">
+            <h1 className="text-2xl font-bold font-serif text-center mb-12 tracking-widest">
+              ACKNOWLEDGEMENT
+            </h1>
+            <div className="space-y-6 font-serif text-[12pt] leading-[2.0] text-justify">
+              <p>
+                First and foremost, we wish to place record our ardent and earnest gratitude to <strong>Dr. SHEFIN SHOUKATH</strong>, Head of the Department of Electronics and Communication Engineering for providing us with all facilities for the completion of this project.
+              </p>
+              <p>
+                This venture would have been a distant dream without the immense assistance, corporation and technical support rendered to us by our project coordinators <strong>Mrs. CHITHRA THAMPI</strong>, Assistant Professor, Department of Electronics and Communication Engineering and <strong>Mrs. SAJITHA P</strong>, VP & Associate Professor, Department of Electronics and Communication Engineering.
+              </p>
+              <p>
+                We are extremely happy to mention a great of gratitude to our project guide <strong>Mrs. RASUL MUTHU A</strong>, Assistant Professor, Department of Electronics and Communication Engineering. Her tutelage and guidance were the leading factors in translating our efforts to fruition. Her prudent and perspective vision has shown light on our trial to triumph.
+              </p>
+              <p>
+                We also extend our gratefulness to all the staff members in the department. We also thank all friends for their valuable observations and opinions. We also express our heartfelt gratitude to parents for all their encouragements, support and love.
+              </p>
+              <p>
+                Finally, we thank all our well-wishers who greatly contribute directly or indirectly for the successful completion of this project.
+              </p>
+            </div>
+
+            <div className="mt-16 flex justify-end font-serif">
+              <div className="text-left">
+                <p className="mb-4">SUBMITTED BY,</p>
+                <div className="space-y-2 uppercase">
+                  <p>NOOR FATHIMA A</p>
+                  <p>SAFNA FATHIMA S S</p>
+                  <p>NOORUL SURUMI NF</p>
+                  <p>AMINA S</p>
+                  <p>MUHAMMED RAMEES N</p>
+                </div>
+              </div>
+            </div>
           </div>
         </Page>
 
         {/* PAGE 4: ABSTRACT */}
-        <Page pageNumber={3}>
-          <ChapterTitle title="Abstract" />
-          <div className="mt-10 space-y-6">
-            <Paragraph>
-              The global waste crisis necessitates innovative solutions for efficient segregation and recycling. This project presents an automated "Smart Waste Segregation System" designed to classify waste at the point of disposal. Utilizing an Arduino Uno microcontroller integrated with IR, moisture, and capacitive sensors, the system identifies waste as organic (wet), plastic, or other materials in real-time.
-            </Paragraph>
-            <Paragraph>
-              The operational workflow involves waste detection by an IR sensor, followed by material analysis through specialized sensors. The Arduino processes these inputs and triggers servo motors to direct the waste into designated compartments. LED indicators provide immediate visual confirmation to the user, enhancing the overall disposal experience and promoting better compliance with waste management guidelines.
-            </Paragraph>
-            <Paragraph>
-              Experimental results demonstrate a high degree of accuracy (over 92%) and reliability, making the system suitable for implementation in smart cities, educational institutions, and commercial complexes. This report details the technical architecture, market analysis, and business strategy for the commercialization of this sustainable technology, aiming to reduce landfill volumes and improve global recycling efficiency.
-            </Paragraph>
+        <Page pageNumber={4}>
+          <div className="py-10">
+            <h1 className="text-2xl font-bold font-serif text-center mb-12 tracking-widest">
+              ABSTRACT
+            </h1>
+            <div className="space-y-6 font-serif text-[12pt] leading-[2.0] text-justify">
+              <p>
+                The global waste crisis necessitates innovative solutions for efficient segregation and recycling. This project presents an automated "Smart Waste Segregation System" designed to classify waste at the point of disposal. Utilizing an Arduino Uno microcontroller integrated with IR, moisture, and capacitive sensors, the system identifies waste as organic (wet), plastic, or other materials in real-time.
+              </p>
+              <p>
+                The operational workflow involves waste detection by an IR sensor, followed by material analysis through specialized sensors. The Arduino processes these inputs and triggers servo motors to direct the waste into designated compartments. LED indicators provide immediate visual confirmation to the user, enhancing the overall disposal experience and promoting better compliance with waste management guidelines.
+              </p>
+              <p>
+                Experimental results demonstrate a high degree of accuracy (over 92%) and reliability, making the system suitable for implementation in smart cities, educational institutions, and commercial complexes. This report details the technical architecture, market analysis, and business strategy for the commercialization of this sustainable technology, aiming to reduce landfill volumes and improve global recycling efficiency.
+              </p>
+            </div>
+          </div>
+        </Page>
+
+        {/* PAGE 5: INDEX */}
+        <Page pageNumber={5}>
+          <div className="py-10">
+            <h1 className="text-2xl font-bold font-serif text-center mb-12 tracking-widest">
+              INDEX
+            </h1>
+            
+            <div className="font-serif text-[12pt] leading-[2.0] w-full max-w-3xl mx-auto">
+              <div className="flex justify-between font-bold border-b-2 border-black pb-2 mb-4">
+                <span className="w-24">Chapter No.</span>
+                <span className="flex-grow text-center">Title</span>
+                <span className="w-24 text-right">Page No.</span>
+              </div>
+              
+              <div className="space-y-2">
+                <div className="flex justify-between">
+                  <span className="w-24 text-center">1</span>
+                  <span className="flex-grow">Executive Summary</span>
+                  <span className="w-24 text-right">06</span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="w-24 text-center">2</span>
+                  <span className="flex-grow">Introduction & Venture Overview</span>
+                  <span className="w-24 text-right">08</span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="w-24 text-center">3</span>
+                  <span className="flex-grow">Literature Review</span>
+                  <span className="w-24 text-right">11</span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="w-24 text-center">4</span>
+                  <span className="flex-grow">Technology Overview</span>
+                  <span className="w-24 text-right">15</span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="w-24 text-center">5</span>
+                  <span className="flex-grow">System Design & Architecture</span>
+                  <span className="w-24 text-right">20</span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="w-24 text-center">6</span>
+                  <span className="flex-grow">Methodology</span>
+                  <span className="w-24 text-right">23</span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="w-24 text-center">7</span>
+                  <span className="flex-grow">Market Analysis</span>
+                  <span className="w-24 text-right">25</span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="w-24 text-center">8</span>
+                  <span className="flex-grow">Business Model & Financials</span>
+                  <span className="w-24 text-right">29</span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="w-24 text-center">9</span>
+                  <span className="flex-grow">Prototype Development Plan</span>
+                  <span className="w-24 text-right">32</span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="w-24 text-center">10</span>
+                  <span className="flex-grow">Stakeholder Engagement</span>
+                  <span className="w-24 text-right">35</span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="w-24 text-center">11</span>
+                  <span className="flex-grow">Risk Management & Conclusion</span>
+                  <span className="w-24 text-right">38</span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="w-24 text-center">12</span>
+                  <span className="flex-grow">References</span>
+                  <span className="w-24 text-right">44</span>
+                </div>
+              </div>
+            </div>
           </div>
         </Page>
 
         {/* PAGE 6-7: EXECUTIVE SUMMARY */}
-        <Page pageNumber={4}>
+        <Page pageNumber={6}>
           <ChapterTitle title="1. EXECUTIVE SUMMARY" />
           <Paragraph>
             Waste management has emerged as one of the most pressing environmental challenges in modern society. With rapid population growth and urbanization, the volume of daily waste generation has increased exponentially, leading to severe environmental pollution and health hazards. Traditional waste management systems rely heavily on manual segregation, which is inefficient, unhygienic, and prone to human error. The mixing of different waste types - plastic, paper, organic, and other materials - makes recycling extremely difficult and increases the burden on landfills, contributing to soil and water contamination.
@@ -133,7 +304,7 @@ const App: React.FC = () => {
           </Paragraph>
         </Page>
 
-        <Page pageNumber={5}>
+        <Page pageNumber={7}>
           <Paragraph>
             Based on these readings, the Arduino processes the data and activates the appropriate servo motor to direct the waste into the correct bin. LED indicators provide visual feedback to users, ensuring transparency in the segregation process. This immediate feedback loop not only ensures correct disposal but also educates the user on material classification.
           </Paragraph>
@@ -146,7 +317,7 @@ const App: React.FC = () => {
         </Page>
 
         {/* PAGE 8-10: INTRODUCTION */}
-        <Page pageNumber={6}>
+        <Page pageNumber={8}>
           <ChapterTitle title="2. INTRODUCTION & VENTURE OVERVIEW" />
           <MainHeading number="2.1" title="Background and Context" />
           <Paragraph>
@@ -160,7 +331,7 @@ const App: React.FC = () => {
           </Paragraph>
         </Page>
 
-        <Page pageNumber={7}>
+        <Page pageNumber={9}>
           <MainHeading number="2.2" title="Venture Vision and Mission" />
           <SubHeading number="2.2.1" title="Vision Statement" />
           <Paragraph>
@@ -172,7 +343,7 @@ const App: React.FC = () => {
           </Paragraph>
         </Page>
 
-        <Page pageNumber={8}>
+        <Page pageNumber={10}>
           <MainHeading number="2.3" title="Core Values" />
           <Paragraph>
             Our venture is built on a foundation of core values that guide our decision-making and operational strategies. These values ensure that we remain focused on our mission while maintaining the highest standards of ethics and professionalism in all our interactions.
@@ -186,7 +357,7 @@ const App: React.FC = () => {
         </Page>
 
         {/* PAGE 11-14: LITERATURE REVIEW */}
-        <Page pageNumber={9}>
+        <Page pageNumber={11}>
           <ChapterTitle title="3. LITERATURE REVIEW" />
           <Paragraph>
             The development of smart waste management systems has been a subject of extensive research in recent years. This chapter summarizes key findings from relevant literature that informed our project design and technical approach. We have analyzed various methodologies, from simple sensor-based systems to complex AI-driven image recognition models, to find the most cost-effective and reliable solution.
@@ -201,7 +372,7 @@ const App: React.FC = () => {
           </Paragraph>
         </Page>
 
-        <Page pageNumber={10}>
+        <Page pageNumber={12}>
           <SubHeading number="3.1.2" title="Balapriya F et al. (2022)" />
           <Paragraph>
             The study "Enhanced Smart Waste Segregation and Management Using Arduino" focused on improving the accuracy of classification. The authors integrated more sophisticated sensor arrays and optimized the software algorithms to handle a wider variety of waste materials. Their work emphasized the importance of real-time feedback and user interaction in promoting better disposal habits. They found that visual indicators (LEDs) significantly increased user compliance and reduced errors in the disposal process.
@@ -214,7 +385,7 @@ const App: React.FC = () => {
           </Paragraph>
         </Page>
 
-        <Page pageNumber={11}>
+        <Page pageNumber={13}>
           <SubHeading number="3.1.3" title="Muhammad Amirul Farhan & Amira Saryati (2024)" />
           <Paragraph>
             This recent research, "Smart Waste Bin with Automated Segregation System," explored the integration of IoT for real-time waste tracking. While our project focuses on the segregation mechanism, their findings on using ultrasonic sensors for fill-level monitoring and servo motors for lid operation provided valuable insights into the mechanical design of smart bins. They emphasized the need for robust mechanical linkages to ensure long-term reliability of the automated lids, especially in high-traffic public areas.
@@ -227,7 +398,7 @@ const App: React.FC = () => {
           </Paragraph>
         </Page>
 
-        <Page pageNumber={12}>
+        <Page pageNumber={14}>
           <SubHeading number="3.1.4" title="Shwetashree Vijay et al. (2019)" />
           <Paragraph>
             In "Smart Waste Management System Using Arduino," the authors highlighted the importance of automation in reducing human effort and improving hygiene. Their research provided a foundation for our choice of the Arduino platform and the basic sensor-actuator feedback loop. They also discussed the legal and regulatory framework for waste management in urban areas, which informed our legal considerations section.
@@ -242,7 +413,7 @@ const App: React.FC = () => {
         </Page>
 
         {/* PAGE 15-19: TECHNOLOGY OVERVIEW */}
-        <Page pageNumber={13}>
+        <Page pageNumber={15}>
           <ChapterTitle title="4. TECHNOLOGY OVERVIEW" />
           <MainHeading number="4.1" title="Hardware Components" />
           <SubHeading number="4.1.1" title="Arduino Uno Microcontroller" />
@@ -258,7 +429,7 @@ const App: React.FC = () => {
           </Paragraph>
         </Page>
 
-        <Page pageNumber={14}>
+        <Page pageNumber={16}>
           <SubHeading number="4.1.3" title="Moisture Sensors" />
           <Paragraph>
             The moisture sensor is critical for identifying organic or "wet" waste. It measures the volumetric content of water in the waste material by passing a small current between two probes. The resistance between the probes changes based on the moisture content: wet materials have lower resistance (higher conductivity), while dry materials have higher resistance. The Arduino reads the analog voltage from the sensor and compares it against a pre-calibrated threshold to determine if the waste is organic. This sensor is essential for separating food scraps, which are a major source of contamination in recycling streams.
@@ -272,7 +443,7 @@ const App: React.FC = () => {
           </Paragraph>
         </Page>
 
-        <Page pageNumber={15}>
+        <Page pageNumber={17}>
           <SubHeading number="4.1.5" title="Servo Motors" />
           <Paragraph>
             Servo motors are the primary actuators in our system. They are used to open and close the lids of the different segregation compartments. Unlike standard DC motors, servos provide precise control over angular position (typically 0-180 degrees) through Pulse Width Modulation (PWM). We use four servo motors, one for each waste category. When the Arduino identifies the waste type, it sends a PWM signal to the corresponding servo to open the lid, allowing the waste to fall into the correct bin. The servos are chosen for their high torque and reliability.
@@ -286,7 +457,7 @@ const App: React.FC = () => {
           </Paragraph>
         </Page>
 
-        <Page pageNumber={16}>
+        <Page pageNumber={18}>
           <MainHeading number="4.2" title="Software Architecture" />
           <Paragraph>
             The system software is developed using the C++ based Arduino programming language. The architecture follows a modular approach, with separate functions for sensor reading, data processing, and actuator control. This modularity facilitates easy debugging and future expansion.
@@ -306,7 +477,7 @@ const App: React.FC = () => {
           </Paragraph>
         </Page>
 
-        <Page pageNumber={17}>
+        <Page pageNumber={19}>
           <SubHeading number="4.2.2" title="Calibration and Optimization" />
           <Paragraph>
             To ensure high accuracy across different environments, the software includes a calibration routine. This routine accounts for ambient humidity and temperature, which can affect the moisture and capacitive sensor readings. The thresholds for classification are stored in the Arduino's EEPROM, allowing them to be updated without reflashing the entire firmware.
@@ -320,7 +491,7 @@ const App: React.FC = () => {
         </Page>
 
         {/* PAGE 20-22: SYSTEM DESIGN */}
-        <Page pageNumber={18}>
+        <Page pageNumber={20}>
           <ChapterTitle title="5. SYSTEM DESIGN & ARCHITECTURE" />
           <MainHeading number="5.1" title="High-Level Block Diagram" />
           <div className="my-10">
@@ -332,7 +503,7 @@ const App: React.FC = () => {
           </Paragraph>
         </Page>
 
-        <Page pageNumber={19}>
+        <Page pageNumber={21}>
           <MainHeading number="5.2" title="Detailed Circuit Schematic" />
           <div className="my-10">
             <CircuitDiagram />
@@ -343,7 +514,7 @@ const App: React.FC = () => {
           </Paragraph>
         </Page>
 
-        <Page pageNumber={20}>
+        <Page pageNumber={22}>
           <MainHeading number="5.3" title="Mechanical Design and Assembly" />
           <Paragraph>
             The mechanical structure consists of a main enclosure divided into four compartments: Organic, Plastic, Paper, and Other. Each compartment has a spring-loaded lid controlled by a servo motor. The waste input point is designed with a funnel shape to guide the waste towards the sensor array. The enclosure is made of durable, weather-resistant plastic (HDPE) to ensure longevity in both indoor and outdoor settings.
@@ -357,7 +528,7 @@ const App: React.FC = () => {
         </Page>
 
         {/* PAGE 23-25: METHODOLOGY */}
-        <Page pageNumber={21}>
+        <Page pageNumber={23}>
           <ChapterTitle title="6. METHODOLOGY" />
           <MainHeading number="6.1" title="Research and Development Process" />
           <Paragraph>
@@ -369,7 +540,7 @@ const App: React.FC = () => {
           </Paragraph>
         </Page>
 
-        <Page pageNumber={22}>
+        <Page pageNumber={24}>
           <SubHeading number="6.1.2" title="Component Selection and Prototyping" />
           <Paragraph>
             Based on our requirements, we selected the Arduino Uno as our primary controller. We tested various sensors (ultrasonic, IR, moisture, capacitive) to determine the best combination for waste classification. We built several small-scale prototypes to test the mechanical segregation mechanism and the software logic. Each iteration was tested with a variety of waste samples to identify and resolve issues. We used 3D printing for rapid prototyping of the mechanical linkages and sensor mounts.
@@ -380,7 +551,7 @@ const App: React.FC = () => {
           </Paragraph>
         </Page>
 
-        <Page pageNumber={23}>
+        <Page pageNumber={25}>
           <MainHeading number="6.2" title="Testing and Validation Methodology" />
           <Paragraph>
             Validation is conducted through rigorous laboratory and field testing. We use a standardized set of waste samples (plastic bottles, food scraps, paper, etc.) to measure the system's accuracy. Each sample is passed through the bin multiple times under different environmental conditions (varying light, humidity). We record the classification result and compare it against the actual material type to calculate the accuracy rate.
@@ -394,7 +565,7 @@ const App: React.FC = () => {
         </Page>
 
         {/* PAGE 26-28: MARKET ANALYSIS */}
-        <Page pageNumber={24}>
+        <Page pageNumber={26}>
           <ChapterTitle title="7. MARKET ANALYSIS" />
           <MainHeading number="7.1" title="Target Customer Segments" />
           <Paragraph>
@@ -406,7 +577,7 @@ const App: React.FC = () => {
           </Paragraph>
         </Page>
 
-        <Page pageNumber={25}>
+        <Page pageNumber={27}>
           <SubHeading number="7.1.2" title="Educational Institutions" />
           <Paragraph>
             Universities and schools are ideal locations for our smart bins. They have high foot traffic and a strong focus on environmental education. Our bins serve as both a functional waste management tool and an educational exhibit, demonstrating the power of technology in solving environmental problems. We plan to offer educational workshops alongside our bin deployments to further engage students in sustainability.
@@ -417,7 +588,7 @@ const App: React.FC = () => {
           </Paragraph>
         </Page>
 
-        <Page pageNumber={26}>
+        <Page pageNumber={28}>
           <MainHeading number="7.2" title="Market Trends and Opportunities" />
           <Paragraph>
             The global smart waste management market is projected to grow significantly over the next decade. This growth is driven by several factors:
@@ -432,7 +603,7 @@ const App: React.FC = () => {
         </Page>
 
         {/* PAGE 29-31: BUSINESS MODEL */}
-        <Page pageNumber={27}>
+        <Page pageNumber={29}>
           <ChapterTitle title="8. BUSINESS MODEL & FINANCIALS" />
           <MainHeading number="8.1" title="Revenue Streams" />
           <Paragraph>
@@ -445,7 +616,7 @@ const App: React.FC = () => {
           </div>
         </Page>
 
-        <Page pageNumber={28}>
+        <Page pageNumber={30}>
           <MainHeading number="8.2" title="Cost Structure" />
           <Paragraph>
             Our cost structure is optimized for affordability without compromising on quality. The primary costs include component procurement, assembly labor, and R&D. We leverage open-source hardware and software to keep our development costs low.
@@ -473,7 +644,7 @@ const App: React.FC = () => {
           </div>
         </Page>
 
-        <Page pageNumber={29}>
+        <Page pageNumber={31}>
           <MainHeading number="8.3" title="Financial Projections" />
           <Paragraph>
             We project a steady increase in sales over the next three years. In Year 1, we aim to sell 100 units through pilot projects with local institutions. By Year 3, we expect to scale to 1,000 units per year as we expand into new markets. Our gross margin is targeted at 60%, which will allow us to reinvest in product development and marketing. We expect to reach break-even within 18 months of commercial launch.
@@ -487,7 +658,7 @@ const App: React.FC = () => {
         </Page>
 
         {/* PAGE 32-34: PROTOTYPE PLAN */}
-        <Page pageNumber={30}>
+        <Page pageNumber={32}>
           <ChapterTitle title="9. PROTOTYPE DEVELOPMENT PLAN" />
           <MainHeading number="9.1" title="Development Timeline" />
           <Paragraph>
@@ -501,7 +672,7 @@ const App: React.FC = () => {
           </Paragraph>
         </Page>
 
-        <Page pageNumber={31}>
+        <Page pageNumber={33}>
           <SubHeading number="9.1.2" title="Phase 2: Functional Prototype (Months 4-6)" />
           <Paragraph>
             Objectives: Develop a fully functional unit with all features, refine sensor accuracy.
@@ -516,7 +687,7 @@ const App: React.FC = () => {
           </Paragraph>
         </Page>
 
-        <Page pageNumber={32}>
+        <Page pageNumber={34}>
           <SubHeading number="9.1.4" title="Phase 4: Production-Ready Design (Months 10-12)" />
           <Paragraph>
             Objectives: Optimize for manufacturing, reduce costs, ensure consistency.
@@ -529,7 +700,7 @@ const App: React.FC = () => {
         </Page>
 
         {/* PAGE 35-37: STAKEHOLDER ENGAGEMENT */}
-        <Page pageNumber={33}>
+        <Page pageNumber={35}>
           <ChapterTitle title="10. STAKEHOLDER ENGAGEMENT" />
           <MainHeading number="10.1" title="Stakeholder Identification" />
           <Paragraph>
@@ -543,7 +714,7 @@ const App: React.FC = () => {
           </div>
         </Page>
 
-        <Page pageNumber={34}>
+        <Page pageNumber={36}>
           <MainHeading number="10.2" title="Engagement Strategy" />
           <Paragraph>
             Our engagement strategy involves regular communication and collaboration with all stakeholders. We use surveys, interviews, and focus groups to understand their needs and gather feedback on our prototypes. We also participate in environmental technology exhibitions to showcase our solution and build brand awareness.
@@ -556,7 +727,7 @@ const App: React.FC = () => {
           </Paragraph>
         </Page>
 
-        <Page pageNumber={35}>
+        <Page pageNumber={37}>
           <MainHeading number="10.3" title="Expected Outcomes of Engagement" />
           <Paragraph>
             Through effective stakeholder engagement, we expect to achieve:
@@ -571,7 +742,7 @@ const App: React.FC = () => {
         </Page>
 
         {/* PAGE 38-40: RISK & CONCLUSION */}
-        <Page pageNumber={36}>
+        <Page pageNumber={38}>
           <ChapterTitle title="11. RISK MANAGEMENT & CONCLUSION" />
           <MainHeading number="11.1" title="Risk Identification and Mitigation" />
           <Paragraph>
@@ -589,7 +760,7 @@ const App: React.FC = () => {
           </Paragraph>
         </Page>
 
-        <Page pageNumber={37}>
+        <Page pageNumber={39}>
           <MainHeading number="11.2" title="Future Scope" />
           <Paragraph>
             Looking ahead, we plan to expand our product line to include larger commercial systems and integrated IoT connectivity for city-wide waste monitoring. We are also exploring the use of AI and machine vision to further improve classification accuracy, allowing the system to identify complex materials like multi-layer packaging.
@@ -603,7 +774,7 @@ const App: React.FC = () => {
           </Paragraph>
         </Page>
 
-        <Page pageNumber={38}>
+        <Page pageNumber={40}>
           <Paragraph>
             We have assembled a capable team with the necessary skills in electronics, software, and mechanical engineering to execute this business plan. With the right support and partnerships, we are confident that our smart waste segregation system can make a meaningful contribution to a more sustainable future.
           </Paragraph>
@@ -614,7 +785,7 @@ const App: React.FC = () => {
 
         
         {/* PAGE 39+: APPENDICES */}
-        <Page pageNumber={39}>
+        <Page pageNumber={41}>
           <ChapterTitle title="APPENDICES" />
           <MainHeading number="A.1" title="Technical Specifications Table" />
           <div className="my-8">
@@ -639,7 +810,7 @@ const App: React.FC = () => {
           </div>
         </Page>
 
-        <Page pageNumber={40}>
+        <Page pageNumber={42}>
           <MainHeading number="A.2" title="System Diagrams" />
           <div className="mt-8">
             <BlockDiagram />
@@ -647,7 +818,7 @@ const App: React.FC = () => {
           </div>
         </Page>
 
-        <Page pageNumber={41}>
+        <Page pageNumber={43}>
           <div className="mt-8">
             <WorkflowDiagram />
             <p className="figure-caption">Figure A.2: Operational Workflow Logic</p>
@@ -655,7 +826,7 @@ const App: React.FC = () => {
         </Page>
 
         {/* REFERENCES */}
-        <Page pageNumber={42}>
+        <Page pageNumber={44}>
           <ChapterTitle title="12. REFERENCES" />
           <div className="mt-10 space-y-6 font-serif text-[12pt] leading-[2.0]">
             <p className="pl-8 -indent-8">
