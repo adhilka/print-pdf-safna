@@ -85,8 +85,8 @@ const App: React.FC = () => {
             <div className="text-center mb-6">
               <p className="text-lg font-serif italic mb-2">Submitted By</p>
               <div className="space-y-1 text-md font-serif font-bold uppercase">
-                <p>NOOR FATHIMA A</p>
                 <p>SAFNA FATHIMA S.S</p>
+                <p>NOOR FATHIMA A</p>
                 <p>NOORUL SURUMI N.F</p>
                 <p>AMINA S</p>
                 <p>MUHAMMED RAMEES N</p>
@@ -125,7 +125,7 @@ const App: React.FC = () => {
             </h1>
 
             <div className="text-justify font-serif text-[12pt] leading-[2.0] mb-8">
-              Certified that project entitled <strong>“SMART WASTE SEGREGATION USING SENSORS”</strong> is bonafide work carried out in the Second Semester by <strong>“NOOR FATHIMA A, SAFNA FATHIMA S.S, NOORUL SURUMI N.F, AMINA S, MUHAMMED RAMEES N”</strong> in partial fulfillment for the award of Bachelor of Technology in Electronics and Communication Engineering from APJ Abdul Kalam Technological University during the academic year 2025-2026 who carried out the project work under the guidance and no part of this work has been submitted earlier for the award of B. Tech degree.
+              Certified that project entitled <strong>“SMART WASTE SEGREGATION USING SENSORS”</strong> is bonafide work carried out in the Second Semester by <strong>“SAFNA FATHIMA S.S, NOOR FATHIMA A, NOORUL SURUMI N.F, AMINA S, MUHAMMED RAMEES N”</strong> in partial fulfillment for the award of Bachelor of Technology in Electronics and Communication Engineering from APJ Abdul Kalam Technological University during the academic year 2025-2026 who carried out the project work under the guidance and no part of this work has been submitted earlier for the award of B. Tech degree.
             </div>
 
             <div className="w-full flex justify-between px-8 mt-6 font-serif">
@@ -179,8 +179,8 @@ const App: React.FC = () => {
               <div className="text-left">
                 <p className="mb-2">SUBMITTED BY,</p>
                 <div className="space-y-1 uppercase">
-                  <p>NOOR FATHIMA A</p>
                   <p>SAFNA FATHIMA S.S</p>
+                  <p>NOOR FATHIMA A</p>
                   <p>NOORUL SURUMI N.F</p>
                   <p>AMINA S</p>
                   <p>MUHAMMED RAMEES N</p>
