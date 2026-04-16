@@ -96,7 +96,7 @@ const App: React.FC = () => {
             <div className="text-center font-serif font-bold text-lg mt-auto">
               <p>MUSLIM ASSOCIATION COLLEGE OF ENGINEERING</p>
               <p>VENJARAMOODU 695607</p>
-              <p className="mt-4">MARCH 30, 2026</p>
+              <p className="mt-4">APRIL 16, 2026</p>
             </div>
           </div>
         </Page>
@@ -120,33 +120,26 @@ const App: React.FC = () => {
               className="w-32 h-32 object-contain mb-4"
             />
 
-            <h1 className="text-2xl font-bold font-serif mb-6 tracking-widest">
+            <h1 className="text-2xl font-bold font-serif mb-6 tracking-widest uppercase">
               CERTIFICATE
             </h1>
 
-            <div className="text-justify font-serif text-[12pt] leading-[2.0] mb-8">
-              Certified that project entitled <strong>“SMART WASTE SEGREGATION USING SENSORS”</strong> is bonafide work carried out in the Second Semester by <strong>“SAFNA FATHIMA S.S, NOOR FATHIMA A, NOORUL SURUMI N.F, AMINA S, MUHAMMED RAMEES N”</strong> in partial fulfillment for the award of Bachelor of Technology in Electronics and Communication Engineering from APJ Abdul Kalam Technological University during the academic year 2025-2026 who carried out the project work under the guidance and no part of this work has been submitted earlier for the award of B. Tech degree.
+            <div className="text-justify font-serif text-[12pt] leading-[2.0] mb-8 w-full">
+              Certified that project entitled <strong>“SMART WASTE SEGREGATION USING SENSORS”</strong> is bonafide work carried out in the second semester by <strong>“SAFNA FATHIMA S S, NOOR FATHIMA A, NOORUL SURUMI N F, AMINA S, MUHAMMED RAMEES N”</strong> in partial fulfillment for the award of Bachelor of Technology in Electronics and Communication Engineering from APJ Abdul Kalam Technological University during the academic year 2025-2026 who carried out the project work under the guidance and no part of this work has been submitted earlier for the award of B. Tech degree.
             </div>
 
-            <div className="w-full flex justify-between px-8 mt-6 font-serif">
+            <div className="w-full flex justify-between px-8 mt-12 font-serif">
               <div className="text-center">
-                <p className="font-bold mb-8">PROJECT COORDINATOR</p>
-                <p className="font-bold">Mrs. SAJITHA P</p>
-                <p>VP & Associate Professor</p>
-                <p>Department of ECE</p>
-              </div>
-              <div className="text-center">
-                <p className="font-bold mb-8">PROJECT GUIDE</p>
+                <p className="font-bold mb-10">PROJECT GUIDE</p>
                 <p className="font-bold">Mrs. RASUL MUTHU A</p>
                 <p>Assistant Professor</p>
                 <p>Department of ECE</p>
               </div>
-            </div>
-
-            <div className="text-center mt-auto font-serif">
-              <p className="font-bold mb-8">HEAD OF THE DEPARTMENT</p>
-              <p className="font-bold">Dr. SHEFIN SHOUKATH</p>
-              <p>Department of ECE</p>
+              <div className="text-center pt-[15px]">
+                <p className="font-bold mb-10">HEAD OF THE DEPARTMENT</p>
+                <p className="font-bold">Dr. SHEFIN SHOUKATH</p>
+                <p>Department of ECE</p>
+              </div>
             </div>
           </div>
         </Page>
@@ -154,15 +147,12 @@ const App: React.FC = () => {
         {/* PAGE 3: ACKNOWLEDGEMENT */}
         <Page pageNumber={3}>
           <div className="py-6">
-            <h1 className="text-2xl font-bold font-serif text-center mb-8 tracking-widest">
+            <h1 className="text-2xl font-bold font-serif text-center mb-8 tracking-widest uppercase mt-4">
               ACKNOWLEDGEMENT
             </h1>
-            <div className="space-y-4 font-serif text-[12pt] leading-[2.0] text-justify">
+            <div className="space-y-6 font-serif text-[12pt] leading-[2.0] text-justify mt-12">
               <p>
                 First and foremost, we wish to place record our ardent and earnest gratitude to <strong>Dr. SHEFIN SHOUKATH</strong>, Head of the Department of Electronics and Communication Engineering for providing us with all facilities for the completion of this project.
-              </p>
-              <p>
-                This venture would have been a distant dream without the immense assistance, corporation and technical support rendered to us by our project coordinators <strong>Mrs. CHITHRA THAMPI</strong>, Assistant Professor, Department of Electronics and Communication Engineering and <strong>Mrs. SAJITHA P</strong>, VP & Associate Professor, Department of Electronics and Communication Engineering.
               </p>
               <p>
                 We are extremely happy to mention a great of gratitude to our project guide <strong>Mrs. RASUL MUTHU A</strong>, Assistant Professor, Department of Electronics and Communication Engineering. Her tutelage and guidance were the leading factors in translating our efforts to fruition. Her prudent and perspective vision has shown light on our trial to triumph.
@@ -175,15 +165,15 @@ const App: React.FC = () => {
               </p>
             </div>
 
-            <div className="mt-10 flex justify-end font-serif">
-              <div className="text-left">
-                <p className="mb-2">SUBMITTED BY,</p>
-                <div className="space-y-1 uppercase">
-                  <p>SAFNA FATHIMA S.S</p>
+            <div className="mt-[5rem] flex justify-end font-serif mr-4">
+              <div className="text-left font-bold">
+                <p className="mb-4">SUBMITTED BY,</p>
+                <div className="space-y-2 uppercase">
+                  <p>SAFNA FATHIMA S S</p>
                   <p>NOOR FATHIMA A</p>
-                  <p>NOORUL SURUMI N.F</p>
+                  <p>NOORUL SURUMI NF</p>
                   <p>AMINA S</p>
-                  <p>MUHAMMED RAMEES N</p>
+                  <p>MUHAMMED RAMEES</p>
                 </div>
               </div>
             </div>
