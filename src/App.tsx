@@ -210,7 +210,7 @@ const App: React.FC = () => {
           </div>
         </Page>
 
-                                {/* PAGE 5: INDEX PART 1 */}
+                                        {/* PAGE 5: INDEX PART 1 */}
         <Page pageNumber={5}>
           <div className="py-2 h-full flex flex-col justify-start">
             <h1 className="text-[16pt] font-bold font-serif text-center mb-8 tracking-widest uppercase">
@@ -271,6 +271,9 @@ const App: React.FC = () => {
   <div className="flex justify-between items-end">
     <span>14.System Description</span><span>20</span>
   </div>
+  <div className="flex justify-between items-end">
+    <span>15.Materials & Components</span><span>21</span>
+  </div>
 </div>
 
           </div>
@@ -283,46 +286,49 @@ const App: React.FC = () => {
             </h1>
             <div className="flex flex-col space-y-[0.6rem] font-serif font-bold text-[13pt] mb-8 w-full max-w-[85%] mx-auto">
   <div className="flex justify-between items-end">
-    <span>15.Materials & Components</span><span>21</span>
+    <span>16.Circuit Diagram</span><span>22</span>
   </div>
   <div className="flex justify-between items-end">
-    <span>16.Fabrication</span><span>22</span>
+    <span>17.Fabrication</span><span>23</span>
   </div>
   <div className="flex justify-between items-end">
-    <span>17.Assembly</span><span>23</span>
+    <span>18.Assembly</span><span>24</span>
   </div>
   <div className="flex justify-between items-end">
-    <span>18.Testing & Results</span><span>24</span>
+    <span>19.Testing & Results</span><span>25</span>
   </div>
   <div className="flex justify-between items-end">
-    <span>19.Prototype Evaluation</span><span>25</span>
+    <span>20.Prototype Evaluation</span><span>26</span>
   </div>
   <div className="flex justify-between items-end">
-    <span>20.Cost & Financial Feasibility</span><span>26</span>
+    <span>21.Cost & Financial Feasibility</span><span>27</span>
   </div>
   <div className="flex justify-between items-end">
-    <span>21.Applications</span><span>27</span>
+    <span>22.Prototype Cost Breakdown</span><span>28</span>
   </div>
   <div className="flex justify-between items-end">
-    <span>22.Stakeholders</span><span>28</span>
+    <span>23.Applications</span><span>29</span>
   </div>
   <div className="flex justify-between items-end">
-    <span>23.Advantages</span><span>29</span>
+    <span>24.Stakeholders</span><span>30</span>
   </div>
   <div className="flex justify-between items-end">
-    <span>24.Limitations</span><span>30</span>
+    <span>25.Advantages</span><span>31</span>
   </div>
   <div className="flex justify-between items-end">
-    <span>25.Social & Environmental impact</span><span>31</span>
+    <span>26.Limitations</span><span>32</span>
   </div>
   <div className="flex justify-between items-end">
-    <span>26.Future Scope</span><span>32</span>
+    <span>27.Social & Environmental impact</span><span>33</span>
   </div>
   <div className="flex justify-between items-end">
-    <span>27.Conclusion</span><span>33</span>
+    <span>28.Future Scope</span><span>34</span>
   </div>
   <div className="flex justify-between items-end">
-    <span>28.Reference</span><span>34</span>
+    <span>29.Conclusion</span><span>35</span>
+  </div>
+  <div className="flex justify-between items-end">
+    <span>30.Reference</span><span>36</span>
   </div>
 </div>
 
@@ -476,141 +482,160 @@ const App: React.FC = () => {
             <h2 className="font-bold font-serif text-[12pt] mb-2"> 15.Materials & Components </h2>
             <div className="font-serif text-[11.5pt] leading-[2.0] text-justify">
               <h3 className="font-bold font-serif text-[12pt] mt-6 mb-3">15.1 Primary Electronics</h3><h4 className="font-bold italic font-serif text-[11.5pt] mt-4 mb-2">15.1.1 Control Unit</h4><ul className="list-disc pl-10 space-y-3 mb-6"><li><strong>Microcontroller:</strong> Arduino Uno R3 (ATmega328P based standard board).</li><li><strong>Power Supply:</strong> 5V 2A DC Wall Adapter or alternatively an 18650 Li-ion Battery pack stepped down with a Buck Converter.</li></ul><h3 className="font-bold font-serif text-[12pt] mt-6 mb-3">15.2 Sensors and Actuators</h3><ul className="list-disc pl-10 space-y-3 mb-6"><li><strong>Logic Sensors:</strong> Generic IR Obstacle Avoidance Sensor, Industrial Inductive Proximity Sensor (SN04-N).</li><li><strong>Contact Sensors:</strong> Anti-corrosion Capacitive Soil Moisture Sensor.</li><li><strong>Actuators:</strong> MG995 High-Torque Metal Gear Servo Motor.</li></ul><h3 className="font-bold font-serif text-[12pt] mt-6 mb-3">15.3 Structural Elements</h3><ul className="list-disc pl-10 space-y-3 mb-6"><li><strong>Frame & Exterior Chassis:</strong> 3mm clear and opaque Acrylic sheets, 40mm PVC pipes, and Aluminum L-brackets for load support.</li><li><strong>Miscellaneous Hardware:</strong> Jumper wires, FR4 PCB perfboards, LEDs, 330-ohm resistors, Hot melt glue, and metric fasteners (M3/M4 nuts and bolts).</li></ul>
-<div className="mt-8 scale-[0.8] origin-top flex justify-center w-full"><CircuitDiagram /></div>
             </div>
           </div>
         </Page>
-        {/* PAGE 22: 16.Fabrication */}
+        {/* PAGE 22: 16.Circuit Diagram */}
         <Page pageNumber={22}>
           <div className="py-2 px-4">
             <h1 className="text-center font-bold font-serif mb-10 text-[13.5pt]">Design and Development of a Smart Waste Segregation System</h1>
-            <h2 className="font-bold font-serif text-[12pt] mb-2"> 16.Fabrication </h2>
+            <h2 className="font-bold font-serif text-[12pt] mb-2"> 16.Circuit Diagram </h2>
             <div className="font-serif text-[11.5pt] leading-[2.0] text-justify">
-              <h3 className="font-bold font-serif text-[12pt] mt-6 mb-3">16.1 Material Processing</h3><p className="indent-12 mb-4">The fabrication phase of the project necessitated the combination of both traditional subtractive manufacturing and modern rapid additive manufacturing techniques to achieve the desired tolerances.</p><h3 className="font-bold font-serif text-[12pt] mt-6 mb-3">16.2 Hardware Fabrication</h3><h4 className="font-bold italic font-serif text-[11.5pt] mt-4 mb-2">16.2.1 Subtractive Manufacturing (Laser Cutting)</h4><p className="indent-12 mb-4">The main structural chassis and internal partition walls were constructed from robust 3mm acrylic sheets. These were precisely dimensioned and cut to size using a CO2 laser cutter to ensure perfectly tight joint tolerances. All exposed outer edges were subsequently sanded down to remove sharp burrs for safety.</p><h4 className="font-bold italic font-serif text-[11.5pt] mt-4 mb-2">16.2.2 Additive Manufacturing (3D Printing)</h4><p className="indent-12 mb-4">The critical internal diverter flap, which manages the physical routing of the waste, was custom modeled and 3D printed using PLA filament. An internal hex-grid infill of 30% was utilized to maintain a remarkably high strength-to-weight ratio. Finally, sensor mounting brackets were custom bent from thin aluminum strips for adjustable angular mounting.</p>
+              <div className="mt-12 scale-[0.9] origin-top flex justify-center w-full h-[600px] overflow-hidden"><CircuitDiagram /></div>
             </div>
           </div>
         </Page>
-        {/* PAGE 23: 17.Assembly */}
+        {/* PAGE 23: 17.Fabrication */}
         <Page pageNumber={23}>
           <div className="py-2 px-4">
             <h1 className="text-center font-bold font-serif mb-10 text-[13.5pt]">Design and Development of a Smart Waste Segregation System</h1>
-            <h2 className="font-bold font-serif text-[12pt] mb-2"> 17.Assembly </h2>
+            <h2 className="font-bold font-serif text-[12pt] mb-2"> 17.Fabrication </h2>
             <div className="font-serif text-[11.5pt] leading-[2.0] text-justify">
-              <h3 className="font-bold font-serif text-[12pt] mt-6 mb-3">17.1 Mechanical Assembly Sequence</h3><p className="indent-12 mb-4">Physical assembly was methodically conducted in distinct chronological stages. First, the 3D-printed diverter flap was directly coupled to the splined shaft of the MG995 servo using a specialized structural circular horn, firmly secured with a central M3 machine screw. The servo body was then bolted securely to the main acrylic chassis acting as the anchor point.</p><h3 className="font-bold font-serif text-[12pt] mt-6 mb-3">17.2 Sensor and Circuit Integration</h3><h4 className="font-bold italic font-serif text-[11.5pt] mt-4 mb-2">17.2.1 Angular Sensor Positioning</h4><p className="indent-12 mb-4">Next, the upper detection chamber was mated to the base. The IR, inductive, and moisture sensors were glued and bolted into their respective slotted brackets, carefully angled to perfectly intersect the anticipated drop trajectory of typical waste items.</p><h4 className="font-bold italic font-serif text-[11.5pt] mt-4 mb-2">17.2.2 Electronics Harnessing</h4><p className="indent-12 mb-4">The discrete electronic components were permanently soldered onto a custom pre-tinned perfboard, effectively forming a single robust shield that plugs directly into the Arduino Uno headers. All external sensor and motor wire harnesses were routed cleanly along the inner walls and anchored with zip ties to prevent hazardous interference with the moving diverter flap.</p>
+              <h3 className="font-bold font-serif text-[12pt] mt-6 mb-3">17.1 Material Processing</h3><p className="indent-12 mb-4">The fabrication phase of the project necessitated the combination of both traditional subtractive manufacturing and modern rapid additive manufacturing techniques to achieve the desired tolerances.</p><h3 className="font-bold font-serif text-[12pt] mt-6 mb-3">17.2 Hardware Fabrication</h3><h4 className="font-bold italic font-serif text-[11.5pt] mt-4 mb-2">17.2.1 Subtractive Manufacturing (Laser Cutting)</h4><p className="indent-12 mb-4">The main structural chassis and internal partition walls were constructed from robust 3mm acrylic sheets. These were precisely dimensioned and cut to size using a CO2 laser cutter to ensure perfectly tight joint tolerances. All exposed outer edges were subsequently sanded down to remove sharp burrs for safety.</p><h4 className="font-bold italic font-serif text-[11.5pt] mt-4 mb-2">17.2.2 Additive Manufacturing (3D Printing)</h4><p className="indent-12 mb-4">The critical internal diverter flap, which manages the physical routing of the waste, was custom modeled and 3D printed using PLA filament. An internal hex-grid infill of 30% was utilized to maintain a remarkably high strength-to-weight ratio. Finally, sensor mounting brackets were custom bent from thin aluminum strips for adjustable angular mounting.</p>
             </div>
           </div>
         </Page>
-        {/* PAGE 24: 18.Testing & Results */}
+        {/* PAGE 24: 18.Assembly */}
         <Page pageNumber={24}>
           <div className="py-2 px-4">
             <h1 className="text-center font-bold font-serif mb-10 text-[13.5pt]">Design and Development of a Smart Waste Segregation System</h1>
-            <h2 className="font-bold font-serif text-[12pt] mb-2"> 18.Testing & Results </h2>
+            <h2 className="font-bold font-serif text-[12pt] mb-2"> 18.Assembly </h2>
             <div className="font-serif text-[11.5pt] leading-[2.0] text-justify">
-              <h3 className="font-bold font-serif text-[12pt] mt-6 mb-3">18.1 Testing Methodology</h3><p className="indent-12 mb-4">Testing protocols were strictly divided into localized component-level unit testing followed subsequently by rigorous full-system integration operational testing to guarantee reliability.</p><h3 className="font-bold font-serif text-[12pt] mt-6 mb-3">18.2 Calibration Phase</h3><h4 className="font-bold italic font-serif text-[11.5pt] mt-4 mb-2">18.2.1 Sensor Threshold Tuning</h4><p className="indent-12 mb-4">Unit testing primarily verified and locked in the analog calibration thresholds deep within the code. The inductive sensor correctly and repeatedly identified aluminum and steel cans at an operational distance of 4mm. Simultaneously, the analog moisture sensor successfully differentiated between wet organic matter (like a wet paper towel) and dry plastics based on tuned voltage thresholds.</p><h3 className="font-bold font-serif text-[12pt] mt-6 mb-3">18.3 System Performance Results</h3><p className="indent-12 mb-4">During final integration testing, a controlled sample set encompassing exactly 100 mixed objects (30 metallic, 40 wet organic, 30 dry non-metallic) was introduced into the top intake. The system proudly and successfully segregated 92 out of 100 total objects. Errors primarily occurred with unordinarily heavily crumpled dry paper falsely snagging and triggering the metallic sensor. The overall calculated system accuracy was proven to be 92%.</p>
+              <h3 className="font-bold font-serif text-[12pt] mt-6 mb-3">18.1 Mechanical Assembly Sequence</h3><p className="indent-12 mb-4">Physical assembly was methodically conducted in distinct chronological stages. First, the 3D-printed diverter flap was directly coupled to the splined shaft of the MG995 servo using a specialized structural circular horn, firmly secured with a central M3 machine screw. The servo body was then bolted securely to the main acrylic chassis acting as the anchor point.</p><h3 className="font-bold font-serif text-[12pt] mt-6 mb-3">18.2 Sensor and Circuit Integration</h3><h4 className="font-bold italic font-serif text-[11.5pt] mt-4 mb-2">18.2.1 Angular Sensor Positioning</h4><p className="indent-12 mb-4">Next, the upper detection chamber was mated to the base. The IR, inductive, and moisture sensors were glued and bolted into their respective slotted brackets, carefully angled to perfectly intersect the anticipated drop trajectory of typical waste items.</p><h4 className="font-bold italic font-serif text-[11.5pt] mt-4 mb-2">18.2.2 Electronics Harnessing</h4><p className="indent-12 mb-4">The discrete electronic components were permanently soldered onto a custom pre-tinned perfboard, effectively forming a single robust shield that plugs directly into the Arduino Uno headers. All external sensor and motor wire harnesses were routed cleanly along the inner walls and anchored with zip ties to prevent hazardous interference with the moving diverter flap.</p>
             </div>
           </div>
         </Page>
-        {/* PAGE 25: 19.Prototype Evaluation */}
+        {/* PAGE 25: 19.Testing & Results */}
         <Page pageNumber={25}>
           <div className="py-2 px-4">
             <h1 className="text-center font-bold font-serif mb-10 text-[13.5pt]">Design and Development of a Smart Waste Segregation System</h1>
-            <h2 className="font-bold font-serif text-[12pt] mb-2"> 19.Prototype Evaluation </h2>
+            <h2 className="font-bold font-serif text-[12pt] mb-2"> 19.Testing & Results </h2>
             <div className="font-serif text-[11.5pt] leading-[2.0] text-justify">
-              <h3 className="font-bold font-serif text-[12pt] mt-6 mb-3">19.1 Identified Strengths</h3><p className="indent-12 mb-4">Evaluating the prototype post-testing confirmed that it effectively met its primary technical objectives, demonstrating unexpectedly rapid and reliable physical segregation. The total response time—from initial object insertion to the final flap actuation and reset—averaged a mere 1.2 seconds, falling well within highly acceptable usability limits for public bin deployments.</p><h3 className="font-bold font-serif text-[12pt] mt-6 mb-3">19.2 Target Areas for Improvement</h3><h4 className="font-bold italic font-serif text-[11.5pt] mt-4 mb-2">19.2.1 Physical Durability Concerns</h4><p className="indent-12 mb-4">While the structural integrity of the acrylic chassis proved highly adequate for light-to-medium indoor waste, municipal or industrial usage would undoubtedly require heavy-duty sheet steel or impact-resistant thick polycarbonate panels to survive abuse.</p><h4 className="font-bold italic font-serif text-[11.5pt] mt-4 mb-2">19.2.2 Sensor Maintenance Requirements</h4><p className="indent-12 mb-4">The evaluation clearly highlighted that the capacitive moisture sensor, due to its contact-based nature, required unacceptably frequent cleaning to maintain reading accuracy over long durations, as wet debris occasionally clung to it. Upgrading to a specialized non-contact optical spectrometer is highly recommended for commercial iterations.</p>
+              <h3 className="font-bold font-serif text-[12pt] mt-6 mb-3">19.1 Testing Methodology</h3><p className="indent-12 mb-4">Testing protocols were strictly divided into localized component-level unit testing followed subsequently by rigorous full-system integration operational testing to guarantee reliability.</p><h3 className="font-bold font-serif text-[12pt] mt-6 mb-3">19.2 Calibration Phase</h3><h4 className="font-bold italic font-serif text-[11.5pt] mt-4 mb-2">19.2.1 Sensor Threshold Tuning</h4><p className="indent-12 mb-4">Unit testing primarily verified and locked in the analog calibration thresholds deep within the code. The inductive sensor correctly and repeatedly identified aluminum and steel cans at an operational distance of 4mm. Simultaneously, the analog moisture sensor successfully differentiated between wet organic matter (like a wet paper towel) and dry plastics based on tuned voltage thresholds.</p><h3 className="font-bold font-serif text-[12pt] mt-6 mb-3">19.3 System Performance Results</h3><p className="indent-12 mb-4">During final integration testing, a controlled sample set encompassing exactly 100 mixed objects (30 metallic, 40 wet organic, 30 dry non-metallic) was introduced into the top intake. The system proudly and successfully segregated 92 out of 100 total objects. Errors primarily occurred with unordinarily heavily crumpled dry paper falsely snagging and triggering the metallic sensor. The overall calculated system accuracy was proven to be 92%.</p>
             </div>
           </div>
         </Page>
-        {/* PAGE 26: 20.Cost & Financial Feasibility */}
+        {/* PAGE 26: 20.Prototype Evaluation */}
         <Page pageNumber={26}>
           <div className="py-2 px-4">
             <h1 className="text-center font-bold font-serif mb-10 text-[13.5pt]">Design and Development of a Smart Waste Segregation System</h1>
-            <h2 className="font-bold font-serif text-[12pt] mb-2"> 20.Cost & Financial Feasibility </h2>
+            <h2 className="font-bold font-serif text-[12pt] mb-2"> 20.Prototype Evaluation </h2>
             <div className="font-serif text-[11.5pt] leading-[2.0] text-justify">
-              <h3 className="font-bold font-serif text-[12pt] mt-6 mb-3">20.1 Prototype Manufacturing Costs</h3><p className="indent-12 mb-4">Maintaining extreme affordability was a foundational project priority. The completed Bill of Materials (BoM) for the singular prototype is strictly tabulated as follows:<br/><br/>- Core Config: Arduino Uno (₹500)<br/>- Sensor Node: IR, Inductive, Moisture pack (₹400)<br/>- Actuator: MG995 Servo Motor (₹350)<br/>- Structural: Acrylic panels & Fastener Hardware (₹600)<br/>- Distribution: Perfboard, Electronics & Power unit (₹300)<br/><br/><strong>Total Bare-Metal Prototype Cost: ₹2,150.</strong></p><h3 className="font-bold font-serif text-[12pt] mt-6 mb-3">20.2 Scalability and Mass Production</h3><h4 className="font-bold italic font-serif text-[11.5pt] mt-4 mb-2">20.2.1 Manufacturing Economics at Scale</h4><p className="indent-12 mb-4">When strategically scaling this design to mass production levels (e.g., runs of 10,000 units), economies of scale combined with custom integrated PCB fabrication and plastic injection molding will drastically lower the per-unit subassembly cost to an estimated ₹1,200.</p><h4 className="font-bold italic font-serif text-[11.5pt] mt-4 mb-2">20.2.2 Broader Market Context</h4><p className="indent-12 mb-4">Given that standard, un-mechanized municipal tier waste bins currently cost organizations roughly ₹1,500 to ₹3,000 to procure, adding highly functional smart sorting capabilities for effectively the same baseline price point demonstrates exceptionally high financial feasibility and profound market viability.</p>
+              <h3 className="font-bold font-serif text-[12pt] mt-6 mb-3">20.1 Identified Strengths</h3><p className="indent-12 mb-4">Evaluating the prototype post-testing confirmed that it effectively met its primary technical objectives, demonstrating unexpectedly rapid and reliable physical segregation. The total response time—from initial object insertion to the final flap actuation and reset—averaged a mere 1.2 seconds, falling well within highly acceptable usability limits for public bin deployments.</p><h3 className="font-bold font-serif text-[12pt] mt-6 mb-3">20.2 Target Areas for Improvement</h3><h4 className="font-bold italic font-serif text-[11.5pt] mt-4 mb-2">20.2.1 Physical Durability Concerns</h4><p className="indent-12 mb-4">While the structural integrity of the acrylic chassis proved highly adequate for light-to-medium indoor waste, municipal or industrial usage would undoubtedly require heavy-duty sheet steel or impact-resistant thick polycarbonate panels to survive abuse.</p><h4 className="font-bold italic font-serif text-[11.5pt] mt-4 mb-2">20.2.2 Sensor Maintenance Requirements</h4><p className="indent-12 mb-4">The evaluation clearly highlighted that the capacitive moisture sensor, due to its contact-based nature, required unacceptably frequent cleaning to maintain reading accuracy over long durations, as wet debris occasionally clung to it. Upgrading to a specialized non-contact optical spectrometer is highly recommended for commercial iterations.</p>
             </div>
           </div>
         </Page>
-        {/* PAGE 27: 21.Applications */}
+        {/* PAGE 27: 21.Cost & Financial Feasibility */}
         <Page pageNumber={27}>
           <div className="py-2 px-4">
             <h1 className="text-center font-bold font-serif mb-10 text-[13.5pt]">Design and Development of a Smart Waste Segregation System</h1>
-            <h2 className="font-bold font-serif text-[12pt] mb-2"> 21.Applications </h2>
+            <h2 className="font-bold font-serif text-[12pt] mb-2"> 21.Cost & Financial Feasibility </h2>
             <div className="font-serif text-[11.5pt] leading-[2.0] text-justify">
-              <h3 className="font-bold font-serif text-[12pt] mt-6 mb-3">21.1 Micro Deployments and Campuses</h3><h4 className="font-bold italic font-serif text-[11.5pt] mt-4 mb-2">21.1.1 Smart Educational Campuses</h4><ul className="list-disc pl-10 space-y-3 mb-6"><li>Direct deployment in progressive educational institutions, universities, and corporate tech parks seeking to actively automate and enforce their internal zero-waste initiatives without relying on honor systems.</li></ul><h4 className="font-bold italic font-serif text-[11.5pt] mt-4 mb-2">21.1.2 Specialized Healthcare Facilities</h4><ul className="list-disc pl-10 space-y-3 mb-6"><li>Utilizing heavily re-calibrated hardware for intelligently segregating standard biological waste streams from clean pharmaceutical packaging plastics in busy clinical zones.</li></ul><h3 className="font-bold font-serif text-[12pt] mt-6 mb-3">21.2 Macro Deployments</h3><ul className="list-disc pl-10 space-y-3 mb-6"><li><strong>Public Transportation Hubs:</strong> Deployment inside fast-paced airports and dense railway stations where consistently high foot-traffic volumes predictably result in massive quantities of poorly sorted and highly contaminated waste bins.</li><li><strong>Municipal Street Infrastructure:</strong> Upgrading core public infrastructure at the curb to aggressively pre-sort materials before they ever physically reach centralized waste processing sorting plants.</li></ul>
+              <h3 className="font-bold font-serif text-[12pt] mt-6 mb-3">21.1 Scalability and Mass Production</h3><h4 className="font-bold italic font-serif text-[11.5pt] mt-4 mb-2">21.1.1 Manufacturing Economics at Scale</h4><p className="indent-12 mb-4">When strategically scaling this design to mass production levels (e.g., runs of 10,000 units), economies of scale combined with custom integrated PCB fabrication and plastic injection molding will drastically lower the per-unit subassembly cost to an estimated ₹1,200.</p><h4 className="font-bold italic font-serif text-[11.5pt] mt-4 mb-2">21.1.2 Broader Market Context</h4><p className="indent-12 mb-4">Given that standard, un-mechanized municipal tier waste bins currently cost organizations roughly ₹1,500 to ₹3,000 to procure, adding highly functional smart sorting capabilities for effectively the same baseline price point demonstrates exceptionally high financial feasibility and profound market viability.</p>
             </div>
           </div>
         </Page>
-        {/* PAGE 28: 22.Stakeholders */}
+        {/* PAGE 28: 22.Prototype Cost Breakdown */}
         <Page pageNumber={28}>
           <div className="py-2 px-4">
             <h1 className="text-center font-bold font-serif mb-10 text-[13.5pt]">Design and Development of a Smart Waste Segregation System</h1>
-            <h2 className="font-bold font-serif text-[12pt] mb-2"> 22.Stakeholders </h2>
+            <h2 className="font-bold font-serif text-[12pt] mb-2"> 22.Prototype Cost Breakdown </h2>
             <div className="font-serif text-[11.5pt] leading-[2.0] text-justify">
-              <h3 className="font-bold font-serif text-[12pt] mt-6 mb-3">22.1 Direct System Beneficiaries</h3><h4 className="font-bold italic font-serif text-[11.5pt] mt-4 mb-2">22.1.1 The General End Users</h4><p className="indent-12 mb-4">The general public, students, and busy corporate employees who regularly deposit waste. The system offers them a completely seamless, guilt-free disposal experience by entirely removing the cognitive load and guesswork typically required in manual multi-bin sorting systems.</p><h4 className="font-bold italic font-serif text-[11.5pt] mt-4 mb-2">22.1.2 Institutional Management Teams</h4><p className="indent-12 mb-4">Schools, universities, and corporate entities deploying these bins trivially fulfill their strict sustainability goals, definitively improve general campus hygiene, and indirectly boost their public ESG (Environmental and Social Governance) ratings with stakeholders.</p><h3 className="font-bold font-serif text-[12pt] mt-6 mb-3">22.2 Systemic Beneficiaries</h3><p className="indent-12 mb-4"><strong>Local Municipal Corporations</strong> fundamentally benefit from massive, compounding cost reductions in their centralized sorting facilities and a significantly extended lifespan of their local, finite landfills. Secondly, private <strong>Waste Management and Recycling Companies</strong> directly receive pre-sorted, high-purity raw materials at no extra sorting cost, boosting margins.</p>
+              <h3 className="font-bold font-serif text-[12pt] mt-6 mb-3">22.1 Prototype Bill of Materials (BoM)</h3><p className="indent-12 mb-4">Maintaining extreme affordability was a foundational project priority. The tabulated costs associated with fabricating a singular functional prototype unit are presented below.</p><div className="w-full flex justify-center mt-6"><table className="w-full text-left border-collapse border border-slate-300 text-[11pt] shadow-sm bg-white"><thead className="bg-slate-100 text-slate-800"><tr><th className="border border-slate-300 p-4 font-bold">S.No</th><th className="border border-slate-300 p-4 font-bold">Component / Material Description</th><th className="border border-slate-300 p-4 font-bold text-center">Quantity</th><th className="border border-slate-300 p-4 font-bold text-right">Est. Amount (₹)</th></tr></thead><tbody><tr><td className="border border-slate-300 p-4 text-center">1</td><td className="border border-slate-300 p-4">Arduino Uno R3 Microcontroller Board</td><td className="border border-slate-300 p-4 text-center">1</td><td className="border border-slate-300 p-4 text-right">500.00</td></tr><tr><td className="border border-slate-300 p-4 text-center">2</td><td className="border border-slate-300 p-4">Sensor Pack (IR Obstacle, Inductive Proximity, Moisture)</td><td className="border border-slate-300 p-4 text-center">1 Set</td><td className="border border-slate-300 p-4 text-right">400.00</td></tr><tr><td className="border border-slate-300 p-4 text-center">3</td><td className="border border-slate-300 p-4">MG995 Metal Gear High-Torque Servo Motor</td><td className="border border-slate-300 p-4 text-center">1</td><td className="border border-slate-300 p-4 text-right">350.00</td></tr><tr><td className="border border-slate-300 p-4 text-center">4</td><td className="border border-slate-300 p-4">Acrylic Sheets (3mm) & PVC Structural Pipes</td><td className="border border-slate-300 p-4 text-center">As Req.</td><td className="border border-slate-300 p-4 text-right">400.00</td></tr><tr><td className="border border-slate-300 p-4 text-center">5</td><td className="border border-slate-300 p-4">Mechanical Fasteners (M3/M4 Nuts, Bolts, L-Brackets)</td><td className="border border-slate-300 p-4 text-center">1 Set</td><td className="border border-slate-300 p-4 text-right">200.00</td></tr><tr><td className="border border-slate-300 p-4 text-center">6</td><td className="border border-slate-300 p-4">Electronics & Power (Perfboard, LEDs, Wires, 5V Adapter)</td><td className="border border-slate-300 p-4 text-center">1 Set</td><td className="border border-slate-300 p-4 text-right">300.00</td></tr><tr className="bg-slate-50 font-bold text-[12pt]"><td className="border border-slate-300 p-4 text-right" colSpan={3}>Total Estimated Prototype Cost:</td><td className="border border-slate-300 p-4 text-right text-emerald-700">₹2,150.00</td></tr></tbody></table></div>
             </div>
           </div>
         </Page>
-        {/* PAGE 29: 23.Advantages */}
+        {/* PAGE 29: 23.Applications */}
         <Page pageNumber={29}>
           <div className="py-2 px-4">
             <h1 className="text-center font-bold font-serif mb-10 text-[13.5pt]">Design and Development of a Smart Waste Segregation System</h1>
-            <h2 className="font-bold font-serif text-[12pt] mb-2"> 23.Advantages </h2>
+            <h2 className="font-bold font-serif text-[12pt] mb-2"> 23.Applications </h2>
             <div className="font-serif text-[11.5pt] leading-[2.0] text-justify">
-              <h3 className="font-bold font-serif text-[12pt] mt-6 mb-3">23.1 Technical and Economic Advantages</h3><h4 className="font-bold italic font-serif text-[11.5pt] mt-4 mb-2">23.1.1 Extreme Precision Vs. Cost</h4><ul className="list-disc pl-10 space-y-3 mb-6"><li><strong>High Precision vs Cost Ratio:</strong> Astoundingly achieves &gt;90% accuracy utilizing a cobbled-together sensor array that phenomenally costs less than ₹1000 at retail pricing.</li><li><strong>Ultra-Low Power Consumption:</strong> Because the system idles deeply, it can easily be continuously powered indefinitely by a small, cheap solar panel and integrated lithium battery setup, natively enabling off-grid municipal deployment.</li></ul><h3 className="font-bold font-serif text-[12pt] mt-6 mb-3">23.2 Operational Advantages</h3><ul className="list-disc pl-10 space-y-3 mb-6"><li><strong>Fully Automated & Contactless:</strong> Completely, safely removes the fragile human element from the deeply hazardous and unsanitary task of sorting inherently mixed, potentially sharp waste items.</li><li><strong>Real-time Operation Metrics:</strong> Processes, analyzes, and mechanically sorts dropped waste in under 1.5 seconds flat, forcefully preventing physical bottlenecks at busy high-traffic disposal points.</li></ul>
+              <h3 className="font-bold font-serif text-[12pt] mt-6 mb-3">23.1 Micro Deployments and Campuses</h3><h4 className="font-bold italic font-serif text-[11.5pt] mt-4 mb-2">23.1.1 Smart Educational Campuses</h4><ul className="list-disc pl-10 space-y-3 mb-6"><li>Direct deployment in progressive educational institutions, universities, and corporate tech parks seeking to actively automate and enforce their internal zero-waste initiatives without relying on honor systems.</li></ul><h4 className="font-bold italic font-serif text-[11.5pt] mt-4 mb-2">23.1.2 Specialized Healthcare Facilities</h4><ul className="list-disc pl-10 space-y-3 mb-6"><li>Utilizing heavily re-calibrated hardware for intelligently segregating standard biological waste streams from clean pharmaceutical packaging plastics in busy clinical zones.</li></ul><h3 className="font-bold font-serif text-[12pt] mt-6 mb-3">23.2 Macro Deployments</h3><ul className="list-disc pl-10 space-y-3 mb-6"><li><strong>Public Transportation Hubs:</strong> Deployment inside fast-paced airports and dense railway stations where consistently high foot-traffic volumes predictably result in massive quantities of poorly sorted and highly contaminated waste bins.</li><li><strong>Municipal Street Infrastructure:</strong> Upgrading core public infrastructure at the curb to aggressively pre-sort materials before they ever physically reach centralized waste processing sorting plants.</li></ul>
             </div>
           </div>
         </Page>
-        {/* PAGE 30: 24.Limitations */}
+        {/* PAGE 30: 24.Stakeholders */}
         <Page pageNumber={30}>
           <div className="py-2 px-4">
             <h1 className="text-center font-bold font-serif mb-10 text-[13.5pt]">Design and Development of a Smart Waste Segregation System</h1>
-            <h2 className="font-bold font-serif text-[12pt] mb-2"> 24.Limitations </h2>
+            <h2 className="font-bold font-serif text-[12pt] mb-2"> 24.Stakeholders </h2>
             <div className="font-serif text-[11.5pt] leading-[2.0] text-justify">
-              <h3 className="font-bold font-serif text-[12pt] mt-6 mb-3">24.1 Mechanical Hardware Limits</h3><h4 className="font-bold italic font-serif text-[11.5pt] mt-4 mb-2">24.1.1 Throughput and Jam Constraints</h4><p className="indent-12 mb-4">Despite its resounding successes, the prototype has inherent physical limitations. The system forcefully processes items serially; therefore, if an impatient user dumps a large, tightly bound cluster of mixed waste simultaneously, the mechanical diverter flap may physically jam, or worse, sort the entire diverse cluster based incorrectly on a single leading sensor reading.</p><h3 className="font-bold font-serif text-[12pt] mt-6 mb-3">24.2 Sensor Shortcomings</h3><h4 className="font-bold italic font-serif text-[11.5pt] mt-4 mb-2">24.2.1 Physical Contact Limitations</h4><p className="indent-12 mb-4">Furthermore, the standard capacitive soil moisture sensor heavily relies on direct, physical surface contact to measure dielectric changes. This means deeply wet organic materials may stubbornly stick to it during operation, absolutely requiring period manual cleaning by janitorial staff to ensure sensors remain unblinded.</p><h4 className="font-bold italic font-serif text-[11.5pt] mt-4 mb-2">24.2.2 Material Resolution Boundaries</h4><p className="indent-12 mb-4">Finally, the exceedingly basic current sensor array cannot confidently distinguish between more complex sub-categories of dry waste, such as perfectly differentiating a glass bottle from a thick, clear plastic bottle without adding exorbitant optical classification hardware.</p>
+              <h3 className="font-bold font-serif text-[12pt] mt-6 mb-3">24.1 Direct System Beneficiaries</h3><h4 className="font-bold italic font-serif text-[11.5pt] mt-4 mb-2">24.1.1 The General End Users</h4><p className="indent-12 mb-4">The general public, students, and busy corporate employees who regularly deposit waste. The system offers them a completely seamless, guilt-free disposal experience by entirely removing the cognitive load and guesswork typically required in manual multi-bin sorting systems.</p><h4 className="font-bold italic font-serif text-[11.5pt] mt-4 mb-2">24.1.2 Institutional Management Teams</h4><p className="indent-12 mb-4">Schools, universities, and corporate entities deploying these bins trivially fulfill their strict sustainability goals, definitively improve general campus hygiene, and indirectly boost their public ESG (Environmental and Social Governance) ratings with stakeholders.</p><h3 className="font-bold font-serif text-[12pt] mt-6 mb-3">24.2 Systemic Beneficiaries</h3><p className="indent-12 mb-4"><strong>Local Municipal Corporations</strong> fundamentally benefit from massive, compounding cost reductions in their centralized sorting facilities and a significantly extended lifespan of their local, finite landfills. Secondly, private <strong>Waste Management and Recycling Companies</strong> directly receive pre-sorted, high-purity raw materials at no extra sorting cost, boosting margins.</p>
             </div>
           </div>
         </Page>
-        {/* PAGE 31: 25.Social & Environmental impact */}
+        {/* PAGE 31: 25.Advantages */}
         <Page pageNumber={31}>
           <div className="py-2 px-4">
             <h1 className="text-center font-bold font-serif mb-10 text-[13.5pt]">Design and Development of a Smart Waste Segregation System</h1>
-            <h2 className="font-bold font-serif text-[12pt] mb-2"> 25.Social & Environmental impact </h2>
+            <h2 className="font-bold font-serif text-[12pt] mb-2"> 25.Advantages </h2>
             <div className="font-serif text-[11.5pt] leading-[2.0] text-justify">
-              <h3 className="font-bold font-serif text-[12pt] mt-6 mb-3">25.1 Profound Ecological Advantages</h3><p className="indent-12 mb-4">By heavily and accurately separating wet, corrosive organic waste from dry, delicate recyclables at the immediate source of discard, the system outright prevents the catastrophic cross-contamination of paper fibers and recyclable plastics that ruins entire batches.</p><h4 className="font-bold italic font-serif text-[11.5pt] mt-4 mb-2">25.1.1 Direct Emission Reduction</h4><p className="indent-12 mb-4">This pristine separation allows wet organic waste to be smoothly diverted to local composting or biogas facilities, maximizing dry recycling yields and significantly, measurably reducing toxic methane emissions emanating from anaerobic landfill decomposition.</p><h3 className="font-bold font-serif text-[12pt] mt-6 mb-3">25.2 Societal Upliftment</h3><p className="indent-12 mb-4">Urban sanitation work is historically dangerous, socially degrading, and underpaid. Automating the most hazardous sorting phase elevates global occupational safety and actively dignifies waste management labor. It catalyzes a technological shift by promoting human roles upwards toward dignified system maintenance, auditing, and logistics routing rather than dangerous hand-picking.</p>
+              <h3 className="font-bold font-serif text-[12pt] mt-6 mb-3">25.1 Technical and Economic Advantages</h3><h4 className="font-bold italic font-serif text-[11.5pt] mt-4 mb-2">25.1.1 Extreme Precision Vs. Cost</h4><ul className="list-disc pl-10 space-y-3 mb-6"><li><strong>High Precision vs Cost Ratio:</strong> Astoundingly achieves &gt;90% accuracy utilizing a cobbled-together sensor array that phenomenally costs less than ₹1000 at retail pricing.</li><li><strong>Ultra-Low Power Consumption:</strong> Because the system idles deeply, it can easily be continuously powered indefinitely by a small, cheap solar panel and integrated lithium battery setup, natively enabling off-grid municipal deployment.</li></ul><h3 className="font-bold font-serif text-[12pt] mt-6 mb-3">25.2 Operational Advantages</h3><ul className="list-disc pl-10 space-y-3 mb-6"><li><strong>Fully Automated & Contactless:</strong> Completely, safely removes the fragile human element from the deeply hazardous and unsanitary task of sorting inherently mixed, potentially sharp waste items.</li><li><strong>Real-time Operation Metrics:</strong> Processes, analyzes, and mechanically sorts dropped waste in under 1.5 seconds flat, forcefully preventing physical bottlenecks at busy high-traffic disposal points.</li></ul>
             </div>
           </div>
         </Page>
-        {/* PAGE 32: 26.Future Scope */}
+        {/* PAGE 32: 26.Limitations */}
         <Page pageNumber={32}>
           <div className="py-2 px-4">
             <h1 className="text-center font-bold font-serif mb-10 text-[13.5pt]">Design and Development of a Smart Waste Segregation System</h1>
-            <h2 className="font-bold font-serif text-[12pt] mb-2"> 26.Future Scope </h2>
+            <h2 className="font-bold font-serif text-[12pt] mb-2"> 26.Limitations </h2>
             <div className="font-serif text-[11.5pt] leading-[2.0] text-justify">
-              <h3 className="font-bold font-serif text-[12pt] mt-6 mb-3">26.1 Next-Generation Hardware</h3><h4 className="font-bold italic font-serif text-[11.5pt] mt-4 mb-2">26.1.1 Deep IoT and Cloud Architecture</h4><p className="indent-12 mb-4">Future iterations of the platform will aggressively focus on natively integrating IoT communication capabilities. Utilizing a slightly more powerful ESP32 microcontroller, deployed bins could automatically transmit real-time fill-levels, operational health, and localized sorting statistics to a centralized municipal cloud dashboard via persistent Wi-Fi or long-range LoRaWAN networks.</p><h3 className="font-bold font-serif text-[12pt] mt-6 mb-3">26.2 Algorithmic Upgrades</h3><h4 className="font-bold italic font-serif text-[11.5pt] mt-4 mb-2">26.2.1 Embedded Machine Learning at the Edge</h4><p className="indent-12 mb-4">Powerful new Machine Learning models, highly optimized to run continuously on low-power edge devices (such as a Raspberry Pi married to an optical camera module), could be deployed to replace or heavily augment the physical sensor suite. This bold step would allow the system to flawlessly classify specific sub-grades of plastics (identifying PET bottles versus HDPE containers) with unprecedented accuracy.</p>
+              <h3 className="font-bold font-serif text-[12pt] mt-6 mb-3">26.1 Mechanical Hardware Limits</h3><h4 className="font-bold italic font-serif text-[11.5pt] mt-4 mb-2">26.1.1 Throughput and Jam Constraints</h4><p className="indent-12 mb-4">Despite its resounding successes, the prototype has inherent physical limitations. The system forcefully processes items serially; therefore, if an impatient user dumps a large, tightly bound cluster of mixed waste simultaneously, the mechanical diverter flap may physically jam, or worse, sort the entire diverse cluster based incorrectly on a single leading sensor reading.</p><h3 className="font-bold font-serif text-[12pt] mt-6 mb-3">26.2 Sensor Shortcomings</h3><h4 className="font-bold italic font-serif text-[11.5pt] mt-4 mb-2">26.2.1 Physical Contact Limitations</h4><p className="indent-12 mb-4">Furthermore, the standard capacitive soil moisture sensor heavily relies on direct, physical surface contact to measure dielectric changes. This means deeply wet organic materials may stubbornly stick to it during operation, absolutely requiring period manual cleaning by janitorial staff to ensure sensors remain unblinded.</p><h4 className="font-bold italic font-serif text-[11.5pt] mt-4 mb-2">26.2.2 Material Resolution Boundaries</h4><p className="indent-12 mb-4">Finally, the exceedingly basic current sensor array cannot confidently distinguish between more complex sub-categories of dry waste, such as perfectly differentiating a glass bottle from a thick, clear plastic bottle without adding exorbitant optical classification hardware.</p>
             </div>
           </div>
         </Page>
-        {/* PAGE 33: 27.Conclusion */}
+        {/* PAGE 33: 27.Social & Environmental impact */}
         <Page pageNumber={33}>
           <div className="py-2 px-4">
             <h1 className="text-center font-bold font-serif mb-10 text-[13.5pt]">Design and Development of a Smart Waste Segregation System</h1>
-            <h2 className="font-bold font-serif text-[12pt] mb-2"> 27.Conclusion </h2>
+            <h2 className="font-bold font-serif text-[12pt] mb-2"> 27.Social & Environmental impact </h2>
             <div className="font-serif text-[11.5pt] leading-[2.0] text-justify">
-              <h3 className="font-bold font-serif text-[12pt] mt-6 mb-3">27.1 Comprehensive Project Summary</h3><p className="indent-12 mb-4">The exhaustive Design and Development cycle of the prototype Smart Waste Segregation System irrefutably validates that ultra-low-cost, decentralized, and fully automated point-of-source waste sorting is both technically feasible and highly financially viable for mass deployment.</p><h4 className="font-bold italic font-serif text-[11.5pt] mt-4 mb-2">27.1.1 Performance Restatement</h4><p className="indent-12 mb-4">By effectively and intelligently fusing standard inductive, capacitive, and infrared sensing technologies with incredibly reliable, gravity-assisted mechanical actuation logic, the prototype bravely achieved a highly impressive, repeatable 92% segregation accuracy rate during mixed-load stress testing.</p><h3 className="font-bold font-serif text-[12pt] mt-6 mb-3">27.2 Final Concluding Remarks</h3><p className="indent-12 mb-4">Ultimately, this targeted micro-project serves as a deeply critical, tangible proof-of-concept. It clearly demonstrates how intelligently applied microcontroller electronics and basic engineering mechanics can forcefully solve massive, localized environmental challenges. Boldly scaling such localized smart-bin systems natively possesses the disruptive, world-changing potential to fundamentally transform global municipal waste management paradigms.</p>
+              <h3 className="font-bold font-serif text-[12pt] mt-6 mb-3">27.1 Profound Ecological Advantages</h3><p className="indent-12 mb-4">By heavily and accurately separating wet, corrosive organic waste from dry, delicate recyclables at the immediate source of discard, the system outright prevents the catastrophic cross-contamination of paper fibers and recyclable plastics that ruins entire batches.</p><h4 className="font-bold italic font-serif text-[11.5pt] mt-4 mb-2">27.1.1 Direct Emission Reduction</h4><p className="indent-12 mb-4">This pristine separation allows wet organic waste to be smoothly diverted to local composting or biogas facilities, maximizing dry recycling yields and significantly, measurably reducing toxic methane emissions emanating from anaerobic landfill decomposition.</p><h3 className="font-bold font-serif text-[12pt] mt-6 mb-3">27.2 Societal Upliftment</h3><p className="indent-12 mb-4">Urban sanitation work is historically dangerous, socially degrading, and underpaid. Automating the most hazardous sorting phase elevates global occupational safety and actively dignifies waste management labor. It catalyzes a technological shift by promoting human roles upwards toward dignified system maintenance, auditing, and logistics routing rather than dangerous hand-picking.</p>
             </div>
           </div>
         </Page>
-        {/* PAGE 34: 28.Reference */}
+        {/* PAGE 34: 28.Future Scope */}
         <Page pageNumber={34}>
           <div className="py-2 px-4">
             <h1 className="text-center font-bold font-serif mb-10 text-[13.5pt]">Design and Development of a Smart Waste Segregation System</h1>
-            <h2 className="font-bold font-serif text-[12pt] mb-2"> 28.Reference </h2>
+            <h2 className="font-bold font-serif text-[12pt] mb-2"> 28.Future Scope </h2>
+            <div className="font-serif text-[11.5pt] leading-[2.0] text-justify">
+              <h3 className="font-bold font-serif text-[12pt] mt-6 mb-3">28.1 Next-Generation Hardware</h3><h4 className="font-bold italic font-serif text-[11.5pt] mt-4 mb-2">28.1.1 Deep IoT and Cloud Architecture</h4><p className="indent-12 mb-4">Future iterations of the platform will aggressively focus on natively integrating IoT communication capabilities. Utilizing a slightly more powerful ESP32 microcontroller, deployed bins could automatically transmit real-time fill-levels, operational health, and localized sorting statistics to a centralized municipal cloud dashboard via persistent Wi-Fi or long-range LoRaWAN networks.</p><h3 className="font-bold font-serif text-[12pt] mt-6 mb-3">28.2 Algorithmic Upgrades</h3><h4 className="font-bold italic font-serif text-[11.5pt] mt-4 mb-2">28.2.1 Embedded Machine Learning at the Edge</h4><p className="indent-12 mb-4">Powerful new Machine Learning models, highly optimized to run continuously on low-power edge devices (such as a Raspberry Pi married to an optical camera module), could be deployed to replace or heavily augment the physical sensor suite. This bold step would allow the system to flawlessly classify specific sub-grades of plastics (identifying PET bottles versus HDPE containers) with unprecedented accuracy.</p>
+            </div>
+          </div>
+        </Page>
+        {/* PAGE 35: 29.Conclusion */}
+        <Page pageNumber={35}>
+          <div className="py-2 px-4">
+            <h1 className="text-center font-bold font-serif mb-10 text-[13.5pt]">Design and Development of a Smart Waste Segregation System</h1>
+            <h2 className="font-bold font-serif text-[12pt] mb-2"> 29.Conclusion </h2>
+            <div className="font-serif text-[11.5pt] leading-[2.0] text-justify">
+              <h3 className="font-bold font-serif text-[12pt] mt-6 mb-3">29.1 Comprehensive Project Summary</h3><p className="indent-12 mb-4">The exhaustive Design and Development cycle of the prototype Smart Waste Segregation System irrefutably validates that ultra-low-cost, decentralized, and fully automated point-of-source waste sorting is both technically feasible and highly financially viable for mass deployment.</p><h4 className="font-bold italic font-serif text-[11.5pt] mt-4 mb-2">29.1.1 Performance Restatement</h4><p className="indent-12 mb-4">By effectively and intelligently fusing standard inductive, capacitive, and infrared sensing technologies with incredibly reliable, gravity-assisted mechanical actuation logic, the prototype bravely achieved a highly impressive, repeatable 92% segregation accuracy rate during mixed-load stress testing.</p><h3 className="font-bold font-serif text-[12pt] mt-6 mb-3">29.2 Final Concluding Remarks</h3><p className="indent-12 mb-4">Ultimately, this targeted micro-project serves as a deeply critical, tangible proof-of-concept. It clearly demonstrates how intelligently applied microcontroller electronics and basic engineering mechanics can forcefully solve massive, localized environmental challenges. Boldly scaling such localized smart-bin systems natively possesses the disruptive, world-changing potential to fundamentally transform global municipal waste management paradigms.</p>
+            </div>
+          </div>
+        </Page>
+        {/* PAGE 36: 30.Reference */}
+        <Page pageNumber={36}>
+          <div className="py-2 px-4">
+            <h1 className="text-center font-bold font-serif mb-10 text-[13.5pt]">Design and Development of a Smart Waste Segregation System</h1>
+            <h2 className="font-bold font-serif text-[12pt] mb-2"> 30.Reference </h2>
             <div className="font-serif text-[11.5pt] leading-[2.0] text-justify">
               <p className="ml-6 !indent-0 -ml-6 mb-4">Balapriya, F., et al. (2022). "Enhanced Smart Waste Segregation and Management Using Arduino." <em>International Journal of Engineering Research & Technology (IJERT)</em>, 11(4), 112-118.</p><p className="ml-6 !indent-0 -ml-6 mb-4">Khurmi, R. S., and Gupta, J. K. (2005). <em>Theory of Machines</em>. S. Chand & Company Ltd.</p><p className="ml-6 !indent-0 -ml-6 mb-4">Rajkamal (2011). <em>Microcontrollers: Architecture, Programming, Interfacing and System Design</em>. Pearson Education India.</p><p className="ml-6 !indent-0 -ml-6 mb-4">Central Pollution Control Board (CPCB) (2023). <em>Solid Waste Management Report</em>. Ministry of Environment, Forest and Climate Change, Government of India.</p>
             </div>
           </div>
         </Page>
-        <Page pageNumber={35}>
+        <Page pageNumber={37}>
           <div className="py-[2in] flex flex-col items-center justify-center">
             <div className="w-48 h-px bg-slate-300 mb-6" />
             <h2 className="text-2xl font-bold text-slate-900 uppercase tracking-[0.5em]">Thank You</h2>
